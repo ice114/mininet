@@ -249,9 +249,9 @@ class ctrlSat(object):
 
 
     def transP2T(self,plane,sat): #(1,1)->9
-        number=plane*8+sat
+        number=plane*8+sat  
         return number
-    def transT2P(self,number):#s12->[0,1]->1
+    def transT2P(self,number):#s12->[0,1]->1 #s11 0 #s13 2 #s23 
         p=[]
         p.append(int(number[1])-1)
         p.append(int(number[2])-1)
@@ -260,15 +260,15 @@ class ctrlSat(object):
     def genLinkMap(self):
         print("4444444444")
         for i in range(self.total):
-            self.linkMap[i][i]=0
-            self.portMap[i][i]=0
+            self.linkMap[i][i]=0 #先0
+            self.portMap[i][i]=0 
         for i in range(len(self.linksInfo)):
             sw1=self.transT2P(self.linksInfo[i].sw1)
             sw2 = self.transT2P(self.linksInfo[i].sw2)
             #print(sw1,sw2)
-            self.linkMap[sw1][sw2]=1
+            self.linkMap[sw1][sw2]=1 #意味两个交换机相连
             self.linkMap[sw2][sw1]=1
-            self.portMap[sw1][sw2]=self.linksInfo[i].p1
+            self.portMap[sw1][sw2]=self.linksInfo[i].p1 
             self.portMap[sw2][sw1]=self.linksInfo[i].p2
         #for i in range(len(self.portMap)):
         #    print(self.portMap[i])
@@ -307,7 +307,7 @@ class ctrlSat(object):
                     self.roads_nodesTran[i][j]=[_MAX]
                 else:
                     tp_matrix=dijkstra_path(self.actual_map,i)
-                    road=tp_matrix.find_shortestPath(j)
+                    road=tp_matrix.find_shortestPath(j) # i到j的最短跳数
                     self.roads_nodesTran[i][j]=road
                     # road_l=road[str(j)]
                     # road_l.append(j)
@@ -325,6 +325,7 @@ class ctrlSat(object):
         Note = open('sat_log/max_hops.txt', mode='a')
         Note.writelines([str(datetime.datetime.now()), "max hop:", str(hopsnum[1]), '\n'])
         Note.close()
+        
         for i in range(len(self.roads_nodesTran)):
             for j in range(len(self.roads_nodesTran[i])):
                 tp_portTran=[]
