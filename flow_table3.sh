@@ -1,0 +1,1 @@
+simple_switch_CLI --thrift-port 9141 < flow_table/s62.txt

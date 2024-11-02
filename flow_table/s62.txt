@@ -1,0 +1,4 @@
+table_add acc_filling fillin_n_Tunnel_ingress 4694 10.0.1.1/32 => 192.168.6.2 192.168.1.2
+table_add myTunnel_exact myTunnel_forward 192.168.6.2 192.168.1.2 => 4 08:00:00:00:01:11
+table_add myTunnel_exact myTunnel_egress 192.168.1.2 192.168.6.2 => 2 08:00:00:00:02:22
+table_add acc_filling fillin_n_Tunnel_ingress 4660 10.0.1.1/32 => 192.168.6.2 192.168.1.2

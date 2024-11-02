@@ -1,0 +1,62 @@
+sniffing
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+sniffing
+get a pkt
+get a pkt
+sniffing
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python: command not found
+bash: python: command not found
+bash: python: command not found
+bash: python: command not found

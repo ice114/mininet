@@ -1,0 +1,1 @@
+table_add myTunnel_exact myTunnel_egress 192.168.1.1 192.168.1.3 => 1 08:00:00:00:01:03

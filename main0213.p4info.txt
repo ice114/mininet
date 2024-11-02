@@ -1,0 +1,126 @@
+pkg_info {
+  arch: "v1model"
+}
+tables {
+  preamble {
+    id: 41062121
+    name: "MyIngress.ipv4_lpm_add"
+    alias: "ipv4_lpm_add"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: LPM
+  }
+  action_refs {
+    id: 28921407
+  }
+  action_refs {
+    id: 25652968
+  }
+  size: 1024
+}
+tables {
+  preamble {
+    id: 44153280
+    name: "MyIngress.ipv4_lpm_add2"
+    alias: "ipv4_lpm_add2"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: LPM
+  }
+  action_refs {
+    id: 23931188
+  }
+  action_refs {
+    id: 25652968
+  }
+  size: 1024
+}
+tables {
+  preamble {
+    id: 35154609
+    name: "MyEgress.ipv4_final"
+    alias: "ipv4_final"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: LPM
+  }
+  action_refs {
+    id: 26254150
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 1024
+}
+actions {
+  preamble {
+    id: 25652968
+    name: "MyIngress.drop"
+    alias: "drop"
+  }
+}
+actions {
+  preamble {
+    id: 28921407
+    name: "MyIngress.addlabel"
+    alias: "addlabel"
+  }
+  params {
+    id: 1
+    name: "port"
+    bitwidth: 15
+  }
+  params {
+    id: 2
+    name: "flag"
+    bitwidth: 1
+  }
+}
+actions {
+  preamble {
+    id: 23931188
+    name: "MyIngress.addlabel2"
+    alias: "addlabel2"
+  }
+  params {
+    id: 1
+    name: "port"
+    bitwidth: 15
+  }
+  params {
+    id: 2
+    name: "flag"
+    bitwidth: 1
+  }
+}
+actions {
+  preamble {
+    id: 21257015
+    name: "NoAction"
+    alias: "NoAction"
+    annotations: "@noWarn(\"unused\")"
+  }
+}
+actions {
+  preamble {
+    id: 26254150
+    name: "MyEgress.dmac"
+    alias: "dmac"
+  }
+  params {
+    id: 1
+    name: "dstAddr"
+    bitwidth: 48
+  }
+}
+type_info {
+}

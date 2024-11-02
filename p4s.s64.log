@@ -1,0 +1,2334 @@
+Calling target program-options parser
+[21:47:45.854] [bmv2] [D] [thread 26650] Set default default entry for table 'tbl_srcRoute_finish': MyIngress.srcRoute_finish - 
+[21:47:45.854] [bmv2] [D] [thread 26650] Set default default entry for table 'tbl_srcRoute_nhop': MyIngress.srcRoute_nhop - 
+[21:47:45.854] [bmv2] [D] [thread 26650] Set default default entry for table 'MyIngress.tunnel_exact': NoAction - 
+[21:47:45.854] [bmv2] [D] [thread 26650] Set default default entry for table 'MyIngress.ipv4_exact': NoAction - 
+Adding interface s64-eth0 as port 0
+[21:47:45.854] [bmv2] [D] [thread 26650] Adding interface s64-eth0 as port 0
+Adding interface s64-eth2 as port 2
+[21:47:45.902] [bmv2] [D] [thread 26650] Adding interface s64-eth2 as port 2
+Adding interface s64-eth3 as port 3
+[21:47:45.982] [bmv2] [D] [thread 26650] Adding interface s64-eth3 as port 3
+Adding interface s64-eth5 as port 5
+[21:47:46.050] [bmv2] [D] [thread 26650] Adding interface s64-eth5 as port 5
+Adding interface s64-eth7 as port 7
+[21:47:46.069] [bmv2] [D] [thread 26650] Adding interface s64-eth7 as port 7
+Adding interface s64-eth8 as port 8
+[21:47:46.238] [bmv2] [D] [thread 26650] Adding interface s64-eth8 as port 8
+Adding interface s64-eth9 as port 9
+[21:47:46.315] [bmv2] [D] [thread 26650] Adding interface s64-eth9 as port 9
+Server listening on 0.0.0.0:50096
+[21:47:46.371] [bmv2] [I] [thread 26650] Starting Thrift server on port 9143
+[21:47:46.373] [bmv2] [I] [thread 26650] Thrift server was started
+[21:47:47.452] [bmv2] [D] [thread 26662] [0.0] [cxt 0] Processing packet received on port 7
+[21:47:47.452] [bmv2] [D] [thread 26662] [0.0] [cxt 0] Parser 'parser': start
+[21:47:47.452] [bmv2] [D] [thread 26662] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:47:47.452] [bmv2] [D] [thread 26662] [0.0] [cxt 0] Extracting header 'ethernet'
+[21:47:47.452] [bmv2] [D] [thread 26662] [0.0] [cxt 0] Parser state 'start': key is 86dd
+[21:47:47.452] [bmv2] [T] [thread 26662] [0.0] [cxt 0] Bytes parsed: 14
+[21:47:47.452] [bmv2] [D] [thread 26662] [0.0] [cxt 0] Parser 'parser': end
+[21:47:47.452] [bmv2] [D] [thread 26662] [0.0] [cxt 0] Pipeline 'ingress': start
+[21:47:47.452] [bmv2] [T] [thread 26662] [0.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:47:47.452] [bmv2] [T] [thread 26662] [0.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:47:47.452] [bmv2] [T] [thread 26662] [0.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:47:47.452] [bmv2] [D] [thread 26662] [0.0] [cxt 0] Pipeline 'ingress': end
+[21:47:47.452] [bmv2] [D] [thread 26662] [0.0] [cxt 0] Egress port is 0
+[21:47:47.453] [bmv2] [D] [thread 26663] [0.0] [cxt 0] Pipeline 'egress': start
+[21:47:47.453] [bmv2] [D] [thread 26663] [0.0] [cxt 0] Pipeline 'egress': end
+[21:47:47.453] [bmv2] [D] [thread 26663] [0.0] [cxt 0] Deparser 'deparser': start
+[21:47:47.453] [bmv2] [T] [thread 26663] [0.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:47:47.453] [bmv2] [D] [thread 26663] [0.0] [cxt 0] Deparsing header 'ethernet'
+[21:47:47.453] [bmv2] [D] [thread 26663] [0.0] [cxt 0] Deparser 'deparser': end
+[21:47:47.453] [bmv2] [D] [thread 26667] [0.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:47:51.548] [bmv2] [D] [thread 26662] [1.0] [cxt 0] Processing packet received on port 3
+[21:47:51.548] [bmv2] [D] [thread 26662] [1.0] [cxt 0] Parser 'parser': start
+[21:47:51.548] [bmv2] [D] [thread 26662] [1.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:47:51.548] [bmv2] [D] [thread 26662] [1.0] [cxt 0] Extracting header 'ethernet'
+[21:47:51.548] [bmv2] [D] [thread 26662] [1.0] [cxt 0] Parser state 'start': key is 86dd
+[21:47:51.548] [bmv2] [T] [thread 26662] [1.0] [cxt 0] Bytes parsed: 14
+[21:47:51.548] [bmv2] [D] [thread 26662] [1.0] [cxt 0] Parser 'parser': end
+[21:47:51.548] [bmv2] [D] [thread 26662] [1.0] [cxt 0] Pipeline 'ingress': start
+[21:47:51.548] [bmv2] [T] [thread 26662] [1.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:47:51.548] [bmv2] [T] [thread 26662] [1.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:47:51.548] [bmv2] [T] [thread 26662] [1.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:47:51.548] [bmv2] [D] [thread 26662] [1.0] [cxt 0] Pipeline 'ingress': end
+[21:47:51.548] [bmv2] [D] [thread 26662] [1.0] [cxt 0] Egress port is 0
+[21:47:51.549] [bmv2] [D] [thread 26663] [1.0] [cxt 0] Pipeline 'egress': start
+[21:47:51.549] [bmv2] [D] [thread 26663] [1.0] [cxt 0] Pipeline 'egress': end
+[21:47:51.549] [bmv2] [D] [thread 26663] [1.0] [cxt 0] Deparser 'deparser': start
+[21:47:51.549] [bmv2] [T] [thread 26663] [1.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:47:51.549] [bmv2] [D] [thread 26663] [1.0] [cxt 0] Deparsing header 'ethernet'
+[21:47:51.549] [bmv2] [D] [thread 26663] [1.0] [cxt 0] Deparser 'deparser': end
+[21:47:51.550] [bmv2] [D] [thread 26667] [1.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:47:53.031] [bmv2] [D] [thread 26662] [2.0] [cxt 0] Processing packet received on port 3
+[21:47:53.031] [bmv2] [D] [thread 26662] [2.0] [cxt 0] Parser 'parser': start
+[21:47:53.031] [bmv2] [D] [thread 26662] [2.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:47:53.031] [bmv2] [D] [thread 26662] [2.0] [cxt 0] Extracting header 'ethernet'
+[21:47:53.031] [bmv2] [D] [thread 26662] [2.0] [cxt 0] Parser state 'start': key is 86dd
+[21:47:53.031] [bmv2] [T] [thread 26662] [2.0] [cxt 0] Bytes parsed: 14
+[21:47:53.031] [bmv2] [D] [thread 26662] [2.0] [cxt 0] Parser 'parser': end
+[21:47:53.031] [bmv2] [D] [thread 26662] [2.0] [cxt 0] Pipeline 'ingress': start
+[21:47:53.031] [bmv2] [T] [thread 26662] [2.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:47:53.031] [bmv2] [T] [thread 26662] [2.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:47:53.031] [bmv2] [T] [thread 26662] [2.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:47:53.031] [bmv2] [D] [thread 26662] [2.0] [cxt 0] Pipeline 'ingress': end
+[21:47:53.031] [bmv2] [D] [thread 26662] [2.0] [cxt 0] Egress port is 0
+[21:47:53.031] [bmv2] [D] [thread 26662] [3.0] [cxt 0] Processing packet received on port 3
+[21:47:53.031] [bmv2] [D] [thread 26662] [3.0] [cxt 0] Parser 'parser': start
+[21:47:53.031] [bmv2] [D] [thread 26662] [3.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:47:53.031] [bmv2] [D] [thread 26662] [3.0] [cxt 0] Extracting header 'ethernet'
+[21:47:53.031] [bmv2] [D] [thread 26662] [3.0] [cxt 0] Parser state 'start': key is 86dd
+[21:47:53.031] [bmv2] [T] [thread 26662] [3.0] [cxt 0] Bytes parsed: 14
+[21:47:53.031] [bmv2] [D] [thread 26662] [3.0] [cxt 0] Parser 'parser': end
+[21:47:53.031] [bmv2] [D] [thread 26662] [3.0] [cxt 0] Pipeline 'ingress': start
+[21:47:53.031] [bmv2] [T] [thread 26662] [3.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:47:53.031] [bmv2] [T] [thread 26662] [3.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:47:53.031] [bmv2] [T] [thread 26662] [3.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:47:53.031] [bmv2] [D] [thread 26662] [3.0] [cxt 0] Pipeline 'ingress': end
+[21:47:53.031] [bmv2] [D] [thread 26662] [3.0] [cxt 0] Egress port is 0
+[21:47:53.032] [bmv2] [D] [thread 26663] [2.0] [cxt 0] Pipeline 'egress': start
+[21:47:53.032] [bmv2] [D] [thread 26663] [2.0] [cxt 0] Pipeline 'egress': end
+[21:47:53.032] [bmv2] [D] [thread 26663] [2.0] [cxt 0] Deparser 'deparser': start
+[21:47:53.032] [bmv2] [T] [thread 26663] [2.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:47:53.032] [bmv2] [D] [thread 26663] [2.0] [cxt 0] Deparsing header 'ethernet'
+[21:47:53.032] [bmv2] [D] [thread 26663] [2.0] [cxt 0] Deparser 'deparser': end
+[21:47:53.032] [bmv2] [D] [thread 26663] [3.0] [cxt 0] Pipeline 'egress': start
+[21:47:53.032] [bmv2] [D] [thread 26663] [3.0] [cxt 0] Pipeline 'egress': end
+[21:47:53.032] [bmv2] [D] [thread 26663] [3.0] [cxt 0] Deparser 'deparser': start
+[21:47:53.032] [bmv2] [T] [thread 26663] [3.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:47:53.032] [bmv2] [D] [thread 26663] [3.0] [cxt 0] Deparsing header 'ethernet'
+[21:47:53.032] [bmv2] [D] [thread 26663] [3.0] [cxt 0] Deparser 'deparser': end
+[21:47:53.034] [bmv2] [D] [thread 26667] [2.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[21:47:53.034] [bmv2] [D] [thread 26667] [3.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[21:47:53.595] [bmv2] [D] [thread 26662] [4.0] [cxt 0] Processing packet received on port 3
+[21:47:53.595] [bmv2] [D] [thread 26662] [4.0] [cxt 0] Parser 'parser': start
+[21:47:53.595] [bmv2] [D] [thread 26662] [4.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:47:53.595] [bmv2] [D] [thread 26662] [4.0] [cxt 0] Extracting header 'ethernet'
+[21:47:53.595] [bmv2] [D] [thread 26662] [4.0] [cxt 0] Parser state 'start': key is 86dd
+[21:47:53.595] [bmv2] [T] [thread 26662] [4.0] [cxt 0] Bytes parsed: 14
+[21:47:53.595] [bmv2] [D] [thread 26662] [4.0] [cxt 0] Parser 'parser': end
+[21:47:53.595] [bmv2] [D] [thread 26662] [4.0] [cxt 0] Pipeline 'ingress': start
+[21:47:53.595] [bmv2] [T] [thread 26662] [4.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:47:53.595] [bmv2] [T] [thread 26662] [4.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:47:53.595] [bmv2] [T] [thread 26662] [4.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:47:53.595] [bmv2] [D] [thread 26662] [4.0] [cxt 0] Pipeline 'ingress': end
+[21:47:53.595] [bmv2] [D] [thread 26662] [4.0] [cxt 0] Egress port is 0
+[21:47:53.595] [bmv2] [D] [thread 26663] [4.0] [cxt 0] Pipeline 'egress': start
+[21:47:53.595] [bmv2] [D] [thread 26663] [4.0] [cxt 0] Pipeline 'egress': end
+[21:47:53.595] [bmv2] [D] [thread 26663] [4.0] [cxt 0] Deparser 'deparser': start
+[21:47:53.595] [bmv2] [T] [thread 26663] [4.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:47:53.595] [bmv2] [D] [thread 26663] [4.0] [cxt 0] Deparsing header 'ethernet'
+[21:47:53.595] [bmv2] [D] [thread 26663] [4.0] [cxt 0] Deparser 'deparser': end
+[21:47:53.596] [bmv2] [D] [thread 26667] [4.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:47:55.646] [bmv2] [D] [thread 26662] [5.0] [cxt 0] Processing packet received on port 0
+[21:47:55.646] [bmv2] [D] [thread 26662] [5.0] [cxt 0] Parser 'parser': start
+[21:47:55.646] [bmv2] [D] [thread 26662] [5.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:47:55.646] [bmv2] [D] [thread 26662] [5.0] [cxt 0] Extracting header 'ethernet'
+[21:47:55.646] [bmv2] [D] [thread 26662] [5.0] [cxt 0] Parser state 'start': key is 86dd
+[21:47:55.646] [bmv2] [T] [thread 26662] [5.0] [cxt 0] Bytes parsed: 14
+[21:47:55.646] [bmv2] [D] [thread 26662] [5.0] [cxt 0] Parser 'parser': end
+[21:47:55.646] [bmv2] [D] [thread 26662] [5.0] [cxt 0] Pipeline 'ingress': start
+[21:47:55.646] [bmv2] [T] [thread 26662] [5.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:47:55.646] [bmv2] [T] [thread 26662] [5.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:47:55.646] [bmv2] [T] [thread 26662] [5.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:47:55.646] [bmv2] [D] [thread 26662] [5.0] [cxt 0] Pipeline 'ingress': end
+[21:47:55.646] [bmv2] [D] [thread 26662] [5.0] [cxt 0] Egress port is 0
+[21:47:55.646] [bmv2] [D] [thread 26663] [5.0] [cxt 0] Pipeline 'egress': start
+[21:47:55.646] [bmv2] [D] [thread 26663] [5.0] [cxt 0] Pipeline 'egress': end
+[21:47:55.646] [bmv2] [D] [thread 26663] [5.0] [cxt 0] Deparser 'deparser': start
+[21:47:55.646] [bmv2] [T] [thread 26663] [5.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:47:55.646] [bmv2] [D] [thread 26663] [5.0] [cxt 0] Deparsing header 'ethernet'
+[21:47:55.646] [bmv2] [D] [thread 26663] [5.0] [cxt 0] Deparser 'deparser': end
+[21:47:55.650] [bmv2] [D] [thread 26667] [5.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:47:57.693] [bmv2] [D] [thread 26662] [6.0] [cxt 0] Processing packet received on port 8
+[21:47:57.693] [bmv2] [D] [thread 26662] [6.0] [cxt 0] Parser 'parser': start
+[21:47:57.693] [bmv2] [D] [thread 26662] [6.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:47:57.693] [bmv2] [D] [thread 26662] [6.0] [cxt 0] Extracting header 'ethernet'
+[21:47:57.693] [bmv2] [D] [thread 26662] [6.0] [cxt 0] Parser state 'start': key is 86dd
+[21:47:57.693] [bmv2] [T] [thread 26662] [6.0] [cxt 0] Bytes parsed: 14
+[21:47:57.693] [bmv2] [D] [thread 26662] [6.0] [cxt 0] Parser 'parser': end
+[21:47:57.693] [bmv2] [D] [thread 26662] [6.0] [cxt 0] Pipeline 'ingress': start
+[21:47:57.693] [bmv2] [T] [thread 26662] [6.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:47:57.693] [bmv2] [T] [thread 26662] [6.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:47:57.693] [bmv2] [T] [thread 26662] [6.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:47:57.693] [bmv2] [D] [thread 26662] [6.0] [cxt 0] Pipeline 'ingress': end
+[21:47:57.693] [bmv2] [D] [thread 26662] [6.0] [cxt 0] Egress port is 0
+[21:47:57.693] [bmv2] [D] [thread 26663] [6.0] [cxt 0] Pipeline 'egress': start
+[21:47:57.693] [bmv2] [D] [thread 26663] [6.0] [cxt 0] Pipeline 'egress': end
+[21:47:57.693] [bmv2] [D] [thread 26663] [6.0] [cxt 0] Deparser 'deparser': start
+[21:47:57.693] [bmv2] [T] [thread 26663] [6.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:47:57.693] [bmv2] [D] [thread 26663] [6.0] [cxt 0] Deparsing header 'ethernet'
+[21:47:57.693] [bmv2] [D] [thread 26663] [6.0] [cxt 0] Deparser 'deparser': end
+[21:47:57.694] [bmv2] [D] [thread 26667] [6.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:48:03.295] [bmv2] [T] [thread 26951] bm_get_config
+[21:48:03.299] [bmv2] [T] [thread 26951] bm_table_add_entry
+[21:48:03.299] [bmv2] [D] [thread 26951] Entry 0 added to table 'MyIngress.tunnel_exact'
+[21:48:03.299] [bmv2] [D] [thread 26951] Dumping entry 0
+Match key:
+* hdr.ethernet.etherType: EXACT     1212
+Action entry: MyIngress.tunnel_to_sat - 
+
+[21:48:03.301] [bmv2] [T] [thread 26951] bm_table_add_entry
+[21:48:03.301] [bmv2] [D] [thread 26951] Entry 1 added to table 'MyIngress.tunnel_exact'
+[21:48:03.301] [bmv2] [D] [thread 26951] Dumping entry 1
+Match key:
+* hdr.ethernet.etherType: EXACT     1214
+Action entry: MyIngress.tunnel_to_sat_host - 
+
+[21:48:03.302] [bmv2] [T] [thread 26951] bm_table_add_entry
+[21:48:03.302] [bmv2] [D] [thread 26951] Entry 2 added to table 'MyIngress.tunnel_exact'
+[21:48:03.302] [bmv2] [D] [thread 26951] Dumping entry 2
+Match key:
+* hdr.ethernet.etherType: EXACT     1213
+Action entry: MyIngress.tunnel_to_gw_host - 
+
+[21:48:03.453] [bmv2] [T] [thread 26953] bm_get_config
+[21:48:03.457] [bmv2] [T] [thread 26953] bm_table_add_entry
+[21:48:03.457] [bmv2] [D] [thread 26953] Entry 0 added to table 'MyIngress.ipv4_exact'
+[21:48:03.457] [bmv2] [D] [thread 26953] Dumping entry 0
+Match key:
+* hdr.ethernet.etherType: EXACT     0800
+Action entry: MyIngress.ipv4_to_gw_host - 
+
+[21:48:03.458] [bmv2] [T] [thread 26953] bm_table_add_entry
+[21:48:03.458] [bmv2] [D] [thread 26953] Entry 1 added to table 'MyIngress.ipv4_exact'
+[21:48:03.458] [bmv2] [D] [thread 26953] Dumping entry 1
+Match key:
+* hdr.ethernet.etherType: EXACT     0801
+Action entry: MyIngress.ipv4_to_host - 
+
+[21:48:03.839] [bmv2] [D] [thread 26662] [7.0] [cxt 0] Processing packet received on port 9
+[21:48:03.839] [bmv2] [D] [thread 26662] [7.0] [cxt 0] Parser 'parser': start
+[21:48:03.839] [bmv2] [D] [thread 26662] [7.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:48:03.839] [bmv2] [D] [thread 26662] [7.0] [cxt 0] Extracting header 'ethernet'
+[21:48:03.839] [bmv2] [D] [thread 26662] [7.0] [cxt 0] Parser state 'start': key is 86dd
+[21:48:03.839] [bmv2] [T] [thread 26662] [7.0] [cxt 0] Bytes parsed: 14
+[21:48:03.839] [bmv2] [D] [thread 26662] [7.0] [cxt 0] Parser 'parser': end
+[21:48:03.839] [bmv2] [D] [thread 26662] [7.0] [cxt 0] Pipeline 'ingress': start
+[21:48:03.839] [bmv2] [T] [thread 26662] [7.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:48:03.839] [bmv2] [T] [thread 26662] [7.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:48:03.839] [bmv2] [T] [thread 26662] [7.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:48:03.839] [bmv2] [D] [thread 26662] [7.0] [cxt 0] Pipeline 'ingress': end
+[21:48:03.839] [bmv2] [D] [thread 26662] [7.0] [cxt 0] Egress port is 0
+[21:48:03.839] [bmv2] [D] [thread 26663] [7.0] [cxt 0] Pipeline 'egress': start
+[21:48:03.839] [bmv2] [D] [thread 26663] [7.0] [cxt 0] Pipeline 'egress': end
+[21:48:03.839] [bmv2] [D] [thread 26663] [7.0] [cxt 0] Deparser 'deparser': start
+[21:48:03.839] [bmv2] [T] [thread 26663] [7.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:48:03.839] [bmv2] [D] [thread 26663] [7.0] [cxt 0] Deparsing header 'ethernet'
+[21:48:03.839] [bmv2] [D] [thread 26663] [7.0] [cxt 0] Deparser 'deparser': end
+[21:48:03.839] [bmv2] [D] [thread 26667] [7.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:48:09.981] [bmv2] [D] [thread 26662] [8.0] [cxt 0] Processing packet received on port 8
+[21:48:09.981] [bmv2] [D] [thread 26662] [8.0] [cxt 0] Parser 'parser': start
+[21:48:09.981] [bmv2] [D] [thread 26662] [8.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:48:09.981] [bmv2] [D] [thread 26662] [8.0] [cxt 0] Extracting header 'ethernet'
+[21:48:09.981] [bmv2] [D] [thread 26662] [8.0] [cxt 0] Parser state 'start': key is 86dd
+[21:48:09.981] [bmv2] [T] [thread 26662] [8.0] [cxt 0] Bytes parsed: 14
+[21:48:09.981] [bmv2] [D] [thread 26662] [8.0] [cxt 0] Parser 'parser': end
+[21:48:09.982] [bmv2] [D] [thread 26662] [8.0] [cxt 0] Pipeline 'ingress': start
+[21:48:09.982] [bmv2] [T] [thread 26662] [8.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:48:09.982] [bmv2] [T] [thread 26662] [8.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:48:09.982] [bmv2] [T] [thread 26662] [8.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:48:09.982] [bmv2] [D] [thread 26662] [8.0] [cxt 0] Pipeline 'ingress': end
+[21:48:09.982] [bmv2] [D] [thread 26662] [8.0] [cxt 0] Egress port is 0
+[21:48:09.982] [bmv2] [D] [thread 26663] [8.0] [cxt 0] Pipeline 'egress': start
+[21:48:09.982] [bmv2] [D] [thread 26663] [8.0] [cxt 0] Pipeline 'egress': end
+[21:48:09.982] [bmv2] [D] [thread 26663] [8.0] [cxt 0] Deparser 'deparser': start
+[21:48:09.982] [bmv2] [T] [thread 26663] [8.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:48:09.982] [bmv2] [D] [thread 26663] [8.0] [cxt 0] Deparsing header 'ethernet'
+[21:48:09.982] [bmv2] [D] [thread 26663] [8.0] [cxt 0] Deparser 'deparser': end
+[21:48:09.982] [bmv2] [D] [thread 26662] [9.0] [cxt 0] Processing packet received on port 9
+[21:48:09.982] [bmv2] [D] [thread 26662] [9.0] [cxt 0] Parser 'parser': start
+[21:48:09.982] [bmv2] [D] [thread 26662] [9.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:48:09.982] [bmv2] [D] [thread 26662] [9.0] [cxt 0] Extracting header 'ethernet'
+[21:48:09.982] [bmv2] [D] [thread 26662] [9.0] [cxt 0] Parser state 'start': key is 86dd
+[21:48:09.982] [bmv2] [T] [thread 26662] [9.0] [cxt 0] Bytes parsed: 14
+[21:48:09.982] [bmv2] [D] [thread 26662] [9.0] [cxt 0] Parser 'parser': end
+[21:48:09.982] [bmv2] [D] [thread 26662] [9.0] [cxt 0] Pipeline 'ingress': start
+[21:48:09.982] [bmv2] [T] [thread 26662] [9.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:48:09.982] [bmv2] [T] [thread 26662] [9.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:48:09.982] [bmv2] [T] [thread 26662] [9.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:48:09.982] [bmv2] [D] [thread 26662] [9.0] [cxt 0] Pipeline 'ingress': end
+[21:48:09.982] [bmv2] [D] [thread 26662] [9.0] [cxt 0] Egress port is 0
+[21:48:09.982] [bmv2] [D] [thread 26663] [9.0] [cxt 0] Pipeline 'egress': start
+[21:48:09.982] [bmv2] [D] [thread 26663] [9.0] [cxt 0] Pipeline 'egress': end
+[21:48:09.982] [bmv2] [D] [thread 26663] [9.0] [cxt 0] Deparser 'deparser': start
+[21:48:09.982] [bmv2] [T] [thread 26663] [9.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:48:09.982] [bmv2] [D] [thread 26663] [9.0] [cxt 0] Deparsing header 'ethernet'
+[21:48:09.982] [bmv2] [D] [thread 26663] [9.0] [cxt 0] Deparser 'deparser': end
+[21:48:09.982] [bmv2] [D] [thread 26667] [8.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:48:09.982] [bmv2] [D] [thread 26667] [9.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:48:19.358] [bmv2] [T] [thread 27190] bm_get_config
+[21:48:19.363] [bmv2] [T] [thread 27190] bm_table_add_entry
+[21:48:19.363] [bmv2] [E] [thread 27190] Error when trying to add entry to table 'MyIngress.tunnel_exact': DUPLICATE_ENTRY
+[21:48:19.364] [bmv2] [T] [thread 27190] bm_table_add_entry
+[21:48:19.364] [bmv2] [E] [thread 27190] Error when trying to add entry to table 'MyIngress.tunnel_exact': DUPLICATE_ENTRY
+[21:48:19.365] [bmv2] [T] [thread 27190] bm_table_add_entry
+[21:48:19.365] [bmv2] [E] [thread 27190] Error when trying to add entry to table 'MyIngress.tunnel_exact': DUPLICATE_ENTRY
+[21:48:19.519] [bmv2] [T] [thread 27193] bm_get_config
+[21:48:19.522] [bmv2] [T] [thread 27193] bm_table_add_entry
+[21:48:19.522] [bmv2] [E] [thread 27193] Error when trying to add entry to table 'MyIngress.ipv4_exact': DUPLICATE_ENTRY
+[21:48:19.522] [bmv2] [T] [thread 27193] bm_table_add_entry
+[21:48:19.522] [bmv2] [E] [thread 27193] Error when trying to add entry to table 'MyIngress.ipv4_exact': DUPLICATE_ENTRY
+[21:48:22.266] [bmv2] [D] [thread 26662] [10.0] [cxt 0] Processing packet received on port 5
+[21:48:22.266] [bmv2] [D] [thread 26662] [10.0] [cxt 0] Parser 'parser': start
+[21:48:22.266] [bmv2] [D] [thread 26662] [10.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:48:22.266] [bmv2] [D] [thread 26662] [10.0] [cxt 0] Extracting header 'ethernet'
+[21:48:22.266] [bmv2] [D] [thread 26662] [10.0] [cxt 0] Parser state 'start': key is 86dd
+[21:48:22.266] [bmv2] [T] [thread 26662] [10.0] [cxt 0] Bytes parsed: 14
+[21:48:22.266] [bmv2] [D] [thread 26662] [10.0] [cxt 0] Parser 'parser': end
+[21:48:22.266] [bmv2] [D] [thread 26662] [10.0] [cxt 0] Pipeline 'ingress': start
+[21:48:22.266] [bmv2] [T] [thread 26662] [10.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:48:22.266] [bmv2] [T] [thread 26662] [10.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:48:22.266] [bmv2] [T] [thread 26662] [10.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:48:22.266] [bmv2] [D] [thread 26662] [10.0] [cxt 0] Pipeline 'ingress': end
+[21:48:22.266] [bmv2] [D] [thread 26662] [10.0] [cxt 0] Egress port is 0
+[21:48:22.266] [bmv2] [D] [thread 26663] [10.0] [cxt 0] Pipeline 'egress': start
+[21:48:22.266] [bmv2] [D] [thread 26663] [10.0] [cxt 0] Pipeline 'egress': end
+[21:48:22.266] [bmv2] [D] [thread 26663] [10.0] [cxt 0] Deparser 'deparser': start
+[21:48:22.266] [bmv2] [T] [thread 26663] [10.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:48:22.266] [bmv2] [D] [thread 26663] [10.0] [cxt 0] Deparsing header 'ethernet'
+[21:48:22.266] [bmv2] [D] [thread 26663] [10.0] [cxt 0] Deparser 'deparser': end
+[21:48:22.266] [bmv2] [D] [thread 26667] [10.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:48:38.655] [bmv2] [D] [thread 26662] [11.0] [cxt 0] Processing packet received on port 5
+[21:48:38.655] [bmv2] [D] [thread 26662] [11.0] [cxt 0] Parser 'parser': start
+[21:48:38.655] [bmv2] [D] [thread 26662] [11.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:48:38.655] [bmv2] [D] [thread 26662] [11.0] [cxt 0] Extracting header 'ethernet'
+[21:48:38.655] [bmv2] [D] [thread 26662] [11.0] [cxt 0] Parser state 'start': key is 86dd
+[21:48:38.655] [bmv2] [T] [thread 26662] [11.0] [cxt 0] Bytes parsed: 14
+[21:48:38.655] [bmv2] [D] [thread 26662] [11.0] [cxt 0] Parser 'parser': end
+[21:48:38.655] [bmv2] [D] [thread 26662] [11.0] [cxt 0] Pipeline 'ingress': start
+[21:48:38.655] [bmv2] [T] [thread 26662] [11.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:48:38.655] [bmv2] [T] [thread 26662] [11.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:48:38.655] [bmv2] [T] [thread 26662] [11.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:48:38.655] [bmv2] [D] [thread 26662] [11.0] [cxt 0] Pipeline 'ingress': end
+[21:48:38.655] [bmv2] [D] [thread 26662] [11.0] [cxt 0] Egress port is 0
+[21:48:38.655] [bmv2] [D] [thread 26663] [11.0] [cxt 0] Pipeline 'egress': start
+[21:48:38.655] [bmv2] [D] [thread 26663] [11.0] [cxt 0] Pipeline 'egress': end
+[21:48:38.655] [bmv2] [D] [thread 26663] [11.0] [cxt 0] Deparser 'deparser': start
+[21:48:38.655] [bmv2] [T] [thread 26663] [11.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:48:38.655] [bmv2] [D] [thread 26663] [11.0] [cxt 0] Deparsing header 'ethernet'
+[21:48:38.655] [bmv2] [D] [thread 26663] [11.0] [cxt 0] Deparser 'deparser': end
+[21:48:38.655] [bmv2] [D] [thread 26667] [11.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:48:50.938] [bmv2] [D] [thread 26662] [12.0] [cxt 0] Processing packet received on port 0
+[21:48:50.938] [bmv2] [D] [thread 26662] [12.0] [cxt 0] Parser 'parser': start
+[21:48:50.938] [bmv2] [D] [thread 26662] [12.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:48:50.938] [bmv2] [D] [thread 26662] [12.0] [cxt 0] Extracting header 'ethernet'
+[21:48:50.938] [bmv2] [D] [thread 26662] [12.0] [cxt 0] Parser state 'start': key is 86dd
+[21:48:50.938] [bmv2] [T] [thread 26662] [12.0] [cxt 0] Bytes parsed: 14
+[21:48:50.938] [bmv2] [D] [thread 26662] [12.0] [cxt 0] Parser 'parser': end
+[21:48:50.938] [bmv2] [D] [thread 26662] [12.0] [cxt 0] Pipeline 'ingress': start
+[21:48:50.938] [bmv2] [T] [thread 26662] [12.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:48:50.938] [bmv2] [T] [thread 26662] [12.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:48:50.938] [bmv2] [T] [thread 26662] [12.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:48:50.938] [bmv2] [D] [thread 26662] [12.0] [cxt 0] Pipeline 'ingress': end
+[21:48:50.938] [bmv2] [D] [thread 26662] [12.0] [cxt 0] Egress port is 0
+[21:48:50.938] [bmv2] [D] [thread 26663] [12.0] [cxt 0] Pipeline 'egress': start
+[21:48:50.938] [bmv2] [D] [thread 26663] [12.0] [cxt 0] Pipeline 'egress': end
+[21:48:50.938] [bmv2] [D] [thread 26663] [12.0] [cxt 0] Deparser 'deparser': start
+[21:48:50.938] [bmv2] [T] [thread 26663] [12.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:48:50.938] [bmv2] [D] [thread 26663] [12.0] [cxt 0] Deparsing header 'ethernet'
+[21:48:50.938] [bmv2] [D] [thread 26663] [12.0] [cxt 0] Deparser 'deparser': end
+[21:48:50.938] [bmv2] [D] [thread 26667] [12.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:48:55.033] [bmv2] [D] [thread 26662] [13.0] [cxt 0] Processing packet received on port 7
+[21:48:55.033] [bmv2] [D] [thread 26662] [13.0] [cxt 0] Parser 'parser': start
+[21:48:55.033] [bmv2] [D] [thread 26662] [13.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:48:55.033] [bmv2] [D] [thread 26662] [13.0] [cxt 0] Extracting header 'ethernet'
+[21:48:55.033] [bmv2] [D] [thread 26662] [13.0] [cxt 0] Parser state 'start': key is 86dd
+[21:48:55.033] [bmv2] [T] [thread 26662] [13.0] [cxt 0] Bytes parsed: 14
+[21:48:55.033] [bmv2] [D] [thread 26662] [13.0] [cxt 0] Parser 'parser': end
+[21:48:55.033] [bmv2] [D] [thread 26662] [13.0] [cxt 0] Pipeline 'ingress': start
+[21:48:55.033] [bmv2] [T] [thread 26662] [13.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:48:55.033] [bmv2] [T] [thread 26662] [13.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:48:55.033] [bmv2] [T] [thread 26662] [13.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:48:55.033] [bmv2] [D] [thread 26662] [13.0] [cxt 0] Pipeline 'ingress': end
+[21:48:55.033] [bmv2] [D] [thread 26662] [13.0] [cxt 0] Egress port is 0
+[21:48:55.033] [bmv2] [D] [thread 26663] [13.0] [cxt 0] Pipeline 'egress': start
+[21:48:55.033] [bmv2] [D] [thread 26663] [13.0] [cxt 0] Pipeline 'egress': end
+[21:48:55.033] [bmv2] [D] [thread 26663] [13.0] [cxt 0] Deparser 'deparser': start
+[21:48:55.033] [bmv2] [T] [thread 26663] [13.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:48:55.033] [bmv2] [D] [thread 26663] [13.0] [cxt 0] Deparsing header 'ethernet'
+[21:48:55.033] [bmv2] [D] [thread 26663] [13.0] [cxt 0] Deparser 'deparser': end
+[21:48:55.033] [bmv2] [D] [thread 26667] [13.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:48:57.087] [bmv2] [D] [thread 26662] [14.0] [cxt 0] Processing packet received on port 8
+[21:48:57.087] [bmv2] [D] [thread 26662] [14.0] [cxt 0] Parser 'parser': start
+[21:48:57.087] [bmv2] [D] [thread 26662] [14.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:48:57.087] [bmv2] [D] [thread 26662] [14.0] [cxt 0] Extracting header 'ethernet'
+[21:48:57.087] [bmv2] [D] [thread 26662] [14.0] [cxt 0] Parser state 'start': key is 86dd
+[21:48:57.087] [bmv2] [T] [thread 26662] [14.0] [cxt 0] Bytes parsed: 14
+[21:48:57.087] [bmv2] [D] [thread 26662] [14.0] [cxt 0] Parser 'parser': end
+[21:48:57.087] [bmv2] [D] [thread 26662] [14.0] [cxt 0] Pipeline 'ingress': start
+[21:48:57.087] [bmv2] [T] [thread 26662] [14.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:48:57.087] [bmv2] [T] [thread 26662] [14.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:48:57.087] [bmv2] [T] [thread 26662] [14.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:48:57.087] [bmv2] [D] [thread 26662] [14.0] [cxt 0] Pipeline 'ingress': end
+[21:48:57.087] [bmv2] [D] [thread 26662] [14.0] [cxt 0] Egress port is 0
+[21:48:57.087] [bmv2] [D] [thread 26663] [14.0] [cxt 0] Pipeline 'egress': start
+[21:48:57.087] [bmv2] [D] [thread 26663] [14.0] [cxt 0] Pipeline 'egress': end
+[21:48:57.087] [bmv2] [D] [thread 26663] [14.0] [cxt 0] Deparser 'deparser': start
+[21:48:57.087] [bmv2] [T] [thread 26663] [14.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:48:57.087] [bmv2] [D] [thread 26663] [14.0] [cxt 0] Deparsing header 'ethernet'
+[21:48:57.087] [bmv2] [D] [thread 26663] [14.0] [cxt 0] Deparser 'deparser': end
+[21:48:57.087] [bmv2] [D] [thread 26667] [14.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:48:59.134] [bmv2] [D] [thread 26662] [15.0] [cxt 0] Processing packet received on port 7
+[21:48:59.134] [bmv2] [D] [thread 26662] [15.0] [cxt 0] Parser 'parser': start
+[21:48:59.134] [bmv2] [D] [thread 26662] [15.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:48:59.134] [bmv2] [D] [thread 26662] [15.0] [cxt 0] Extracting header 'ethernet'
+[21:48:59.134] [bmv2] [D] [thread 26662] [15.0] [cxt 0] Parser state 'start': key is 86dd
+[21:48:59.134] [bmv2] [T] [thread 26662] [15.0] [cxt 0] Bytes parsed: 14
+[21:48:59.134] [bmv2] [D] [thread 26662] [15.0] [cxt 0] Parser 'parser': end
+[21:48:59.134] [bmv2] [D] [thread 26662] [15.0] [cxt 0] Pipeline 'ingress': start
+[21:48:59.134] [bmv2] [T] [thread 26662] [15.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:48:59.134] [bmv2] [T] [thread 26662] [15.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:48:59.134] [bmv2] [T] [thread 26662] [15.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:48:59.134] [bmv2] [D] [thread 26662] [15.0] [cxt 0] Pipeline 'ingress': end
+[21:48:59.134] [bmv2] [D] [thread 26662] [15.0] [cxt 0] Egress port is 0
+[21:48:59.134] [bmv2] [D] [thread 26663] [15.0] [cxt 0] Pipeline 'egress': start
+[21:48:59.134] [bmv2] [D] [thread 26663] [15.0] [cxt 0] Pipeline 'egress': end
+[21:48:59.134] [bmv2] [D] [thread 26663] [15.0] [cxt 0] Deparser 'deparser': start
+[21:48:59.134] [bmv2] [T] [thread 26663] [15.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:48:59.135] [bmv2] [D] [thread 26663] [15.0] [cxt 0] Deparsing header 'ethernet'
+[21:48:59.135] [bmv2] [D] [thread 26663] [15.0] [cxt 0] Deparser 'deparser': end
+[21:48:59.135] [bmv2] [D] [thread 26667] [15.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:49:11.423] [bmv2] [D] [thread 26662] [16.0] [cxt 0] Processing packet received on port 9
+[21:49:11.423] [bmv2] [D] [thread 26662] [16.0] [cxt 0] Parser 'parser': start
+[21:49:11.423] [bmv2] [D] [thread 26662] [16.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:49:11.423] [bmv2] [D] [thread 26662] [16.0] [cxt 0] Extracting header 'ethernet'
+[21:49:11.423] [bmv2] [D] [thread 26662] [16.0] [cxt 0] Parser state 'start': key is 86dd
+[21:49:11.423] [bmv2] [T] [thread 26662] [16.0] [cxt 0] Bytes parsed: 14
+[21:49:11.423] [bmv2] [D] [thread 26662] [16.0] [cxt 0] Parser 'parser': end
+[21:49:11.423] [bmv2] [D] [thread 26662] [16.0] [cxt 0] Pipeline 'ingress': start
+[21:49:11.423] [bmv2] [T] [thread 26662] [16.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:49:11.423] [bmv2] [T] [thread 26662] [16.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:49:11.423] [bmv2] [T] [thread 26662] [16.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:49:11.423] [bmv2] [D] [thread 26662] [16.0] [cxt 0] Pipeline 'ingress': end
+[21:49:11.423] [bmv2] [D] [thread 26662] [16.0] [cxt 0] Egress port is 0
+[21:49:11.423] [bmv2] [D] [thread 26663] [16.0] [cxt 0] Pipeline 'egress': start
+[21:49:11.423] [bmv2] [D] [thread 26663] [16.0] [cxt 0] Pipeline 'egress': end
+[21:49:11.423] [bmv2] [D] [thread 26663] [16.0] [cxt 0] Deparser 'deparser': start
+[21:49:11.423] [bmv2] [T] [thread 26663] [16.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:49:11.423] [bmv2] [D] [thread 26663] [16.0] [cxt 0] Deparsing header 'ethernet'
+[21:49:11.423] [bmv2] [D] [thread 26663] [16.0] [cxt 0] Deparser 'deparser': end
+[21:49:11.423] [bmv2] [D] [thread 26667] [16.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:49:15.513] [bmv2] [D] [thread 26662] [17.0] [cxt 0] Processing packet received on port 8
+[21:49:15.513] [bmv2] [D] [thread 26662] [17.0] [cxt 0] Parser 'parser': start
+[21:49:15.513] [bmv2] [D] [thread 26662] [17.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:49:15.513] [bmv2] [D] [thread 26662] [17.0] [cxt 0] Extracting header 'ethernet'
+[21:49:15.513] [bmv2] [D] [thread 26662] [17.0] [cxt 0] Parser state 'start': key is 86dd
+[21:49:15.513] [bmv2] [T] [thread 26662] [17.0] [cxt 0] Bytes parsed: 14
+[21:49:15.513] [bmv2] [D] [thread 26662] [17.0] [cxt 0] Parser 'parser': end
+[21:49:15.513] [bmv2] [D] [thread 26662] [17.0] [cxt 0] Pipeline 'ingress': start
+[21:49:15.513] [bmv2] [T] [thread 26662] [17.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:49:15.513] [bmv2] [T] [thread 26662] [17.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:49:15.513] [bmv2] [T] [thread 26662] [17.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:49:15.513] [bmv2] [D] [thread 26662] [17.0] [cxt 0] Pipeline 'ingress': end
+[21:49:15.514] [bmv2] [D] [thread 26662] [17.0] [cxt 0] Egress port is 0
+[21:49:15.514] [bmv2] [D] [thread 26663] [17.0] [cxt 0] Pipeline 'egress': start
+[21:49:15.514] [bmv2] [D] [thread 26663] [17.0] [cxt 0] Pipeline 'egress': end
+[21:49:15.514] [bmv2] [D] [thread 26663] [17.0] [cxt 0] Deparser 'deparser': start
+[21:49:15.514] [bmv2] [T] [thread 26663] [17.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:49:15.514] [bmv2] [D] [thread 26663] [17.0] [cxt 0] Deparsing header 'ethernet'
+[21:49:15.514] [bmv2] [D] [thread 26663] [17.0] [cxt 0] Deparser 'deparser': end
+[21:49:15.514] [bmv2] [D] [thread 26667] [17.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:49:23.709] [bmv2] [D] [thread 26662] [18.0] [cxt 0] Processing packet received on port 9
+[21:49:23.709] [bmv2] [D] [thread 26662] [18.0] [cxt 0] Parser 'parser': start
+[21:49:23.709] [bmv2] [D] [thread 26662] [18.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:49:23.709] [bmv2] [D] [thread 26662] [18.0] [cxt 0] Extracting header 'ethernet'
+[21:49:23.709] [bmv2] [D] [thread 26662] [18.0] [cxt 0] Parser state 'start': key is 86dd
+[21:49:23.709] [bmv2] [T] [thread 26662] [18.0] [cxt 0] Bytes parsed: 14
+[21:49:23.709] [bmv2] [D] [thread 26662] [18.0] [cxt 0] Parser 'parser': end
+[21:49:23.709] [bmv2] [D] [thread 26662] [18.0] [cxt 0] Pipeline 'ingress': start
+[21:49:23.709] [bmv2] [T] [thread 26662] [18.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:49:23.709] [bmv2] [T] [thread 26662] [18.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:49:23.709] [bmv2] [T] [thread 26662] [18.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:49:23.709] [bmv2] [D] [thread 26662] [18.0] [cxt 0] Pipeline 'ingress': end
+[21:49:23.709] [bmv2] [D] [thread 26662] [18.0] [cxt 0] Egress port is 0
+[21:49:23.709] [bmv2] [D] [thread 26663] [18.0] [cxt 0] Pipeline 'egress': start
+[21:49:23.709] [bmv2] [D] [thread 26663] [18.0] [cxt 0] Pipeline 'egress': end
+[21:49:23.709] [bmv2] [D] [thread 26663] [18.0] [cxt 0] Deparser 'deparser': start
+[21:49:23.709] [bmv2] [T] [thread 26663] [18.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:49:23.709] [bmv2] [D] [thread 26663] [18.0] [cxt 0] Deparsing header 'ethernet'
+[21:49:23.709] [bmv2] [D] [thread 26663] [18.0] [cxt 0] Deparser 'deparser': end
+[21:49:23.709] [bmv2] [D] [thread 26667] [18.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:50:08.765] [bmv2] [D] [thread 26662] [19.0] [cxt 0] Processing packet received on port 5
+[21:50:08.766] [bmv2] [D] [thread 26662] [19.0] [cxt 0] Parser 'parser': start
+[21:50:08.766] [bmv2] [D] [thread 26662] [19.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:50:08.766] [bmv2] [D] [thread 26662] [19.0] [cxt 0] Extracting header 'ethernet'
+[21:50:08.766] [bmv2] [D] [thread 26662] [19.0] [cxt 0] Parser state 'start': key is 86dd
+[21:50:08.766] [bmv2] [T] [thread 26662] [19.0] [cxt 0] Bytes parsed: 14
+[21:50:08.766] [bmv2] [D] [thread 26662] [19.0] [cxt 0] Parser 'parser': end
+[21:50:08.766] [bmv2] [D] [thread 26662] [19.0] [cxt 0] Pipeline 'ingress': start
+[21:50:08.766] [bmv2] [T] [thread 26662] [19.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:50:08.766] [bmv2] [T] [thread 26662] [19.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:50:08.766] [bmv2] [T] [thread 26662] [19.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:50:08.766] [bmv2] [D] [thread 26662] [19.0] [cxt 0] Pipeline 'ingress': end
+[21:50:08.766] [bmv2] [D] [thread 26662] [19.0] [cxt 0] Egress port is 0
+[21:50:08.766] [bmv2] [D] [thread 26663] [19.0] [cxt 0] Pipeline 'egress': start
+[21:50:08.766] [bmv2] [D] [thread 26663] [19.0] [cxt 0] Pipeline 'egress': end
+[21:50:08.766] [bmv2] [D] [thread 26663] [19.0] [cxt 0] Deparser 'deparser': start
+[21:50:08.766] [bmv2] [T] [thread 26663] [19.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:50:08.766] [bmv2] [D] [thread 26663] [19.0] [cxt 0] Deparsing header 'ethernet'
+[21:50:08.766] [bmv2] [D] [thread 26663] [19.0] [cxt 0] Deparser 'deparser': end
+[21:50:08.766] [bmv2] [D] [thread 26667] [19.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:50:35.391] [bmv2] [D] [thread 26662] [20.0] [cxt 0] Processing packet received on port 2
+[21:50:35.392] [bmv2] [D] [thread 26662] [20.0] [cxt 0] Parser 'parser': start
+[21:50:35.392] [bmv2] [D] [thread 26662] [20.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:50:35.392] [bmv2] [D] [thread 26662] [20.0] [cxt 0] Extracting header 'ethernet'
+[21:50:35.392] [bmv2] [D] [thread 26662] [20.0] [cxt 0] Parser state 'start': key is 86dd
+[21:50:35.392] [bmv2] [T] [thread 26662] [20.0] [cxt 0] Bytes parsed: 14
+[21:50:35.392] [bmv2] [D] [thread 26662] [20.0] [cxt 0] Parser 'parser': end
+[21:50:35.392] [bmv2] [D] [thread 26662] [20.0] [cxt 0] Pipeline 'ingress': start
+[21:50:35.392] [bmv2] [T] [thread 26662] [20.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:50:35.392] [bmv2] [T] [thread 26662] [20.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:50:35.392] [bmv2] [T] [thread 26662] [20.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:50:35.392] [bmv2] [D] [thread 26662] [20.0] [cxt 0] Pipeline 'ingress': end
+[21:50:35.392] [bmv2] [D] [thread 26662] [20.0] [cxt 0] Egress port is 0
+[21:50:35.392] [bmv2] [D] [thread 26663] [20.0] [cxt 0] Pipeline 'egress': start
+[21:50:35.392] [bmv2] [D] [thread 26663] [20.0] [cxt 0] Pipeline 'egress': end
+[21:50:35.392] [bmv2] [D] [thread 26663] [20.0] [cxt 0] Deparser 'deparser': start
+[21:50:35.392] [bmv2] [T] [thread 26663] [20.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:50:35.392] [bmv2] [D] [thread 26663] [20.0] [cxt 0] Deparsing header 'ethernet'
+[21:50:35.392] [bmv2] [D] [thread 26663] [20.0] [cxt 0] Deparser 'deparser': end
+[21:50:35.392] [bmv2] [D] [thread 26667] [20.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:50:41.533] [bmv2] [D] [thread 26662] [21.0] [cxt 0] Processing packet received on port 0
+[21:50:41.534] [bmv2] [D] [thread 26662] [21.0] [cxt 0] Parser 'parser': start
+[21:50:41.534] [bmv2] [D] [thread 26662] [21.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:50:41.534] [bmv2] [D] [thread 26662] [21.0] [cxt 0] Extracting header 'ethernet'
+[21:50:41.534] [bmv2] [D] [thread 26662] [21.0] [cxt 0] Parser state 'start': key is 86dd
+[21:50:41.534] [bmv2] [T] [thread 26662] [21.0] [cxt 0] Bytes parsed: 14
+[21:50:41.534] [bmv2] [D] [thread 26662] [21.0] [cxt 0] Parser 'parser': end
+[21:50:41.534] [bmv2] [D] [thread 26662] [21.0] [cxt 0] Pipeline 'ingress': start
+[21:50:41.534] [bmv2] [T] [thread 26662] [21.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:50:41.534] [bmv2] [T] [thread 26662] [21.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:50:41.534] [bmv2] [T] [thread 26662] [21.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:50:41.534] [bmv2] [D] [thread 26662] [21.0] [cxt 0] Pipeline 'ingress': end
+[21:50:41.534] [bmv2] [D] [thread 26662] [21.0] [cxt 0] Egress port is 0
+[21:50:41.534] [bmv2] [D] [thread 26663] [21.0] [cxt 0] Pipeline 'egress': start
+[21:50:41.534] [bmv2] [D] [thread 26663] [21.0] [cxt 0] Pipeline 'egress': end
+[21:50:41.534] [bmv2] [D] [thread 26663] [21.0] [cxt 0] Deparser 'deparser': start
+[21:50:41.534] [bmv2] [T] [thread 26663] [21.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:50:41.534] [bmv2] [D] [thread 26663] [21.0] [cxt 0] Deparsing header 'ethernet'
+[21:50:41.534] [bmv2] [D] [thread 26663] [21.0] [cxt 0] Deparser 'deparser': end
+[21:50:41.534] [bmv2] [D] [thread 26667] [21.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:50:47.674] [bmv2] [D] [thread 26662] [22.0] [cxt 0] Processing packet received on port 5
+[21:50:47.674] [bmv2] [D] [thread 26662] [22.0] [cxt 0] Parser 'parser': start
+[21:50:47.674] [bmv2] [D] [thread 26662] [22.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:50:47.674] [bmv2] [D] [thread 26662] [22.0] [cxt 0] Extracting header 'ethernet'
+[21:50:47.675] [bmv2] [D] [thread 26662] [22.0] [cxt 0] Parser state 'start': key is 86dd
+[21:50:47.675] [bmv2] [T] [thread 26662] [22.0] [cxt 0] Bytes parsed: 14
+[21:50:47.675] [bmv2] [D] [thread 26662] [22.0] [cxt 0] Parser 'parser': end
+[21:50:47.675] [bmv2] [D] [thread 26662] [22.0] [cxt 0] Pipeline 'ingress': start
+[21:50:47.675] [bmv2] [T] [thread 26662] [22.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:50:47.675] [bmv2] [T] [thread 26662] [22.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:50:47.675] [bmv2] [T] [thread 26662] [22.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:50:47.675] [bmv2] [D] [thread 26662] [22.0] [cxt 0] Pipeline 'ingress': end
+[21:50:47.675] [bmv2] [D] [thread 26662] [22.0] [cxt 0] Egress port is 0
+[21:50:47.675] [bmv2] [D] [thread 26663] [22.0] [cxt 0] Pipeline 'egress': start
+[21:50:47.675] [bmv2] [D] [thread 26663] [22.0] [cxt 0] Pipeline 'egress': end
+[21:50:47.675] [bmv2] [D] [thread 26663] [22.0] [cxt 0] Deparser 'deparser': start
+[21:50:47.675] [bmv2] [T] [thread 26663] [22.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:50:47.675] [bmv2] [D] [thread 26663] [22.0] [cxt 0] Deparsing header 'ethernet'
+[21:50:47.675] [bmv2] [D] [thread 26663] [22.0] [cxt 0] Deparser 'deparser': end
+[21:50:47.675] [bmv2] [D] [thread 26667] [22.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:50:47.675] [bmv2] [D] [thread 26662] [23.0] [cxt 0] Processing packet received on port 8
+[21:50:47.675] [bmv2] [D] [thread 26662] [23.0] [cxt 0] Parser 'parser': start
+[21:50:47.675] [bmv2] [D] [thread 26662] [23.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:50:47.675] [bmv2] [D] [thread 26662] [23.0] [cxt 0] Extracting header 'ethernet'
+[21:50:47.675] [bmv2] [D] [thread 26662] [23.0] [cxt 0] Parser state 'start': key is 86dd
+[21:50:47.675] [bmv2] [T] [thread 26662] [23.0] [cxt 0] Bytes parsed: 14
+[21:50:47.675] [bmv2] [D] [thread 26662] [23.0] [cxt 0] Parser 'parser': end
+[21:50:47.675] [bmv2] [D] [thread 26662] [23.0] [cxt 0] Pipeline 'ingress': start
+[21:50:47.675] [bmv2] [T] [thread 26662] [23.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:50:47.675] [bmv2] [T] [thread 26662] [23.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:50:47.675] [bmv2] [T] [thread 26662] [23.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:50:47.675] [bmv2] [D] [thread 26662] [23.0] [cxt 0] Pipeline 'ingress': end
+[21:50:47.675] [bmv2] [D] [thread 26662] [23.0] [cxt 0] Egress port is 0
+[21:50:47.675] [bmv2] [D] [thread 26663] [23.0] [cxt 0] Pipeline 'egress': start
+[21:50:47.675] [bmv2] [D] [thread 26663] [23.0] [cxt 0] Pipeline 'egress': end
+[21:50:47.675] [bmv2] [D] [thread 26663] [23.0] [cxt 0] Deparser 'deparser': start
+[21:50:47.675] [bmv2] [T] [thread 26663] [23.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:50:47.675] [bmv2] [D] [thread 26663] [23.0] [cxt 0] Deparsing header 'ethernet'
+[21:50:47.676] [bmv2] [D] [thread 26663] [23.0] [cxt 0] Deparser 'deparser': end
+[21:50:47.676] [bmv2] [D] [thread 26667] [23.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:50:51.771] [bmv2] [D] [thread 26662] [24.0] [cxt 0] Processing packet received on port 2
+[21:50:51.771] [bmv2] [D] [thread 26662] [24.0] [cxt 0] Parser 'parser': start
+[21:50:51.771] [bmv2] [D] [thread 26662] [24.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:50:51.771] [bmv2] [D] [thread 26662] [24.0] [cxt 0] Extracting header 'ethernet'
+[21:50:51.771] [bmv2] [D] [thread 26662] [24.0] [cxt 0] Parser state 'start': key is 86dd
+[21:50:51.771] [bmv2] [T] [thread 26662] [24.0] [cxt 0] Bytes parsed: 14
+[21:50:51.771] [bmv2] [D] [thread 26662] [24.0] [cxt 0] Parser 'parser': end
+[21:50:51.771] [bmv2] [D] [thread 26662] [24.0] [cxt 0] Pipeline 'ingress': start
+[21:50:51.771] [bmv2] [T] [thread 26662] [24.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:50:51.771] [bmv2] [T] [thread 26662] [24.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:50:51.771] [bmv2] [T] [thread 26662] [24.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:50:51.771] [bmv2] [D] [thread 26662] [24.0] [cxt 0] Pipeline 'ingress': end
+[21:50:51.771] [bmv2] [D] [thread 26662] [24.0] [cxt 0] Egress port is 0
+[21:50:51.772] [bmv2] [D] [thread 26663] [24.0] [cxt 0] Pipeline 'egress': start
+[21:50:51.772] [bmv2] [D] [thread 26663] [24.0] [cxt 0] Pipeline 'egress': end
+[21:50:51.772] [bmv2] [D] [thread 26663] [24.0] [cxt 0] Deparser 'deparser': start
+[21:50:51.772] [bmv2] [T] [thread 26663] [24.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:50:51.772] [bmv2] [D] [thread 26663] [24.0] [cxt 0] Deparsing header 'ethernet'
+[21:50:51.772] [bmv2] [D] [thread 26663] [24.0] [cxt 0] Deparser 'deparser': end
+[21:50:51.772] [bmv2] [D] [thread 26667] [24.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:51:09.789] [bmv2] [D] [thread 26662] [25.0] [cxt 0] Processing packet received on port 2
+[21:51:09.789] [bmv2] [D] [thread 26662] [25.0] [cxt 0] Parser 'parser': start
+[21:51:09.789] [bmv2] [D] [thread 26662] [25.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:51:09.789] [bmv2] [D] [thread 26662] [25.0] [cxt 0] Extracting header 'ethernet'
+[21:51:09.789] [bmv2] [D] [thread 26662] [25.0] [cxt 0] Parser state 'start': key is 86dd
+[21:51:09.789] [bmv2] [T] [thread 26662] [25.0] [cxt 0] Bytes parsed: 14
+[21:51:09.789] [bmv2] [D] [thread 26662] [25.0] [cxt 0] Parser 'parser': end
+[21:51:09.789] [bmv2] [D] [thread 26662] [25.0] [cxt 0] Pipeline 'ingress': start
+[21:51:09.789] [bmv2] [T] [thread 26662] [25.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:51:09.789] [bmv2] [T] [thread 26662] [25.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:51:09.789] [bmv2] [T] [thread 26662] [25.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:51:09.789] [bmv2] [D] [thread 26662] [25.0] [cxt 0] Pipeline 'ingress': end
+[21:51:09.789] [bmv2] [D] [thread 26662] [25.0] [cxt 0] Egress port is 0
+[21:51:09.790] [bmv2] [D] [thread 26662] [26.0] [cxt 0] Processing packet received on port 2
+[21:51:09.790] [bmv2] [D] [thread 26662] [26.0] [cxt 0] Parser 'parser': start
+[21:51:09.790] [bmv2] [D] [thread 26663] [25.0] [cxt 0] Pipeline 'egress': start
+[21:51:09.790] [bmv2] [D] [thread 26662] [26.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:51:09.790] [bmv2] [D] [thread 26662] [26.0] [cxt 0] Extracting header 'ethernet'
+[21:51:09.790] [bmv2] [D] [thread 26662] [26.0] [cxt 0] Parser state 'start': key is 86dd
+[21:51:09.790] [bmv2] [T] [thread 26662] [26.0] [cxt 0] Bytes parsed: 14
+[21:51:09.790] [bmv2] [D] [thread 26662] [26.0] [cxt 0] Parser 'parser': end
+[21:51:09.790] [bmv2] [D] [thread 26662] [26.0] [cxt 0] Pipeline 'ingress': start
+[21:51:09.790] [bmv2] [T] [thread 26662] [26.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:51:09.790] [bmv2] [T] [thread 26662] [26.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:51:09.790] [bmv2] [T] [thread 26662] [26.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:51:09.790] [bmv2] [D] [thread 26662] [26.0] [cxt 0] Pipeline 'ingress': end
+[21:51:09.790] [bmv2] [D] [thread 26662] [26.0] [cxt 0] Egress port is 0
+[21:51:09.790] [bmv2] [D] [thread 26663] [25.0] [cxt 0] Pipeline 'egress': end
+[21:51:09.790] [bmv2] [D] [thread 26663] [25.0] [cxt 0] Deparser 'deparser': start
+[21:51:09.790] [bmv2] [T] [thread 26663] [25.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:51:09.790] [bmv2] [D] [thread 26663] [25.0] [cxt 0] Deparsing header 'ethernet'
+[21:51:09.790] [bmv2] [D] [thread 26663] [25.0] [cxt 0] Deparser 'deparser': end
+[21:51:09.790] [bmv2] [D] [thread 26663] [26.0] [cxt 0] Pipeline 'egress': start
+[21:51:09.790] [bmv2] [D] [thread 26663] [26.0] [cxt 0] Pipeline 'egress': end
+[21:51:09.790] [bmv2] [D] [thread 26663] [26.0] [cxt 0] Deparser 'deparser': start
+[21:51:09.790] [bmv2] [T] [thread 26663] [26.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:51:09.790] [bmv2] [D] [thread 26663] [26.0] [cxt 0] Deparsing header 'ethernet'
+[21:51:09.790] [bmv2] [D] [thread 26667] [25.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[21:51:09.790] [bmv2] [D] [thread 26663] [26.0] [cxt 0] Deparser 'deparser': end
+[21:51:09.791] [bmv2] [D] [thread 26667] [26.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[21:51:24.539] [bmv2] [D] [thread 26662] [27.0] [cxt 0] Processing packet received on port 7
+[21:51:24.539] [bmv2] [D] [thread 26662] [27.0] [cxt 0] Parser 'parser': start
+[21:51:24.539] [bmv2] [D] [thread 26662] [27.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:51:24.539] [bmv2] [D] [thread 26662] [27.0] [cxt 0] Extracting header 'ethernet'
+[21:51:24.539] [bmv2] [D] [thread 26662] [27.0] [cxt 0] Parser state 'start': key is 86dd
+[21:51:24.539] [bmv2] [T] [thread 26662] [27.0] [cxt 0] Bytes parsed: 14
+[21:51:24.539] [bmv2] [D] [thread 26662] [27.0] [cxt 0] Parser 'parser': end
+[21:51:24.539] [bmv2] [D] [thread 26662] [27.0] [cxt 0] Pipeline 'ingress': start
+[21:51:24.539] [bmv2] [T] [thread 26662] [27.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:51:24.539] [bmv2] [T] [thread 26662] [27.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:51:24.539] [bmv2] [T] [thread 26662] [27.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:51:24.539] [bmv2] [D] [thread 26662] [27.0] [cxt 0] Pipeline 'ingress': end
+[21:51:24.539] [bmv2] [D] [thread 26662] [27.0] [cxt 0] Egress port is 0
+[21:51:24.542] [bmv2] [D] [thread 26663] [27.0] [cxt 0] Pipeline 'egress': start
+[21:51:24.542] [bmv2] [D] [thread 26663] [27.0] [cxt 0] Pipeline 'egress': end
+[21:51:24.542] [bmv2] [D] [thread 26663] [27.0] [cxt 0] Deparser 'deparser': start
+[21:51:24.542] [bmv2] [T] [thread 26663] [27.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:51:24.542] [bmv2] [D] [thread 26663] [27.0] [cxt 0] Deparsing header 'ethernet'
+[21:51:24.542] [bmv2] [D] [thread 26663] [27.0] [cxt 0] Deparser 'deparser': end
+[21:51:24.542] [bmv2] [D] [thread 26667] [27.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:51:24.546] [bmv2] [D] [thread 26662] [28.0] [cxt 0] Processing packet received on port 9
+[21:51:24.546] [bmv2] [D] [thread 26662] [28.0] [cxt 0] Parser 'parser': start
+[21:51:24.546] [bmv2] [D] [thread 26662] [28.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:51:24.546] [bmv2] [D] [thread 26662] [28.0] [cxt 0] Extracting header 'ethernet'
+[21:51:24.546] [bmv2] [D] [thread 26662] [28.0] [cxt 0] Parser state 'start': key is 86dd
+[21:51:24.546] [bmv2] [T] [thread 26662] [28.0] [cxt 0] Bytes parsed: 14
+[21:51:24.546] [bmv2] [D] [thread 26662] [28.0] [cxt 0] Parser 'parser': end
+[21:51:24.546] [bmv2] [D] [thread 26662] [28.0] [cxt 0] Pipeline 'ingress': start
+[21:51:24.546] [bmv2] [T] [thread 26662] [28.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:51:24.546] [bmv2] [T] [thread 26662] [28.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:51:24.546] [bmv2] [T] [thread 26662] [28.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:51:24.546] [bmv2] [D] [thread 26662] [28.0] [cxt 0] Pipeline 'ingress': end
+[21:51:24.546] [bmv2] [D] [thread 26662] [28.0] [cxt 0] Egress port is 0
+[21:51:24.546] [bmv2] [D] [thread 26663] [28.0] [cxt 0] Pipeline 'egress': start
+[21:51:24.546] [bmv2] [D] [thread 26663] [28.0] [cxt 0] Pipeline 'egress': end
+[21:51:24.546] [bmv2] [D] [thread 26663] [28.0] [cxt 0] Deparser 'deparser': start
+[21:51:24.546] [bmv2] [T] [thread 26663] [28.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:51:24.546] [bmv2] [D] [thread 26663] [28.0] [cxt 0] Deparsing header 'ethernet'
+[21:51:24.546] [bmv2] [D] [thread 26663] [28.0] [cxt 0] Deparser 'deparser': end
+[21:51:24.547] [bmv2] [D] [thread 26667] [28.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:51:40.925] [bmv2] [D] [thread 26662] [29.0] [cxt 0] Processing packet received on port 8
+[21:51:40.925] [bmv2] [D] [thread 26662] [29.0] [cxt 0] Parser 'parser': start
+[21:51:40.925] [bmv2] [D] [thread 26662] [29.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:51:40.925] [bmv2] [D] [thread 26662] [29.0] [cxt 0] Extracting header 'ethernet'
+[21:51:40.926] [bmv2] [D] [thread 26662] [29.0] [cxt 0] Parser state 'start': key is 86dd
+[21:51:40.926] [bmv2] [T] [thread 26662] [29.0] [cxt 0] Bytes parsed: 14
+[21:51:40.926] [bmv2] [D] [thread 26662] [29.0] [cxt 0] Parser 'parser': end
+[21:51:40.926] [bmv2] [D] [thread 26662] [29.0] [cxt 0] Pipeline 'ingress': start
+[21:51:40.926] [bmv2] [T] [thread 26662] [29.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:51:40.926] [bmv2] [T] [thread 26662] [29.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:51:40.926] [bmv2] [T] [thread 26662] [29.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:51:40.926] [bmv2] [D] [thread 26662] [29.0] [cxt 0] Pipeline 'ingress': end
+[21:51:40.926] [bmv2] [D] [thread 26662] [29.0] [cxt 0] Egress port is 0
+[21:51:40.926] [bmv2] [D] [thread 26663] [29.0] [cxt 0] Pipeline 'egress': start
+[21:51:40.926] [bmv2] [D] [thread 26663] [29.0] [cxt 0] Pipeline 'egress': end
+[21:51:40.926] [bmv2] [D] [thread 26663] [29.0] [cxt 0] Deparser 'deparser': start
+[21:51:40.926] [bmv2] [T] [thread 26663] [29.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:51:40.926] [bmv2] [D] [thread 26663] [29.0] [cxt 0] Deparsing header 'ethernet'
+[21:51:40.926] [bmv2] [D] [thread 26663] [29.0] [cxt 0] Deparser 'deparser': end
+[21:51:40.926] [bmv2] [D] [thread 26662] [30.0] [cxt 0] Processing packet received on port 7
+[21:51:40.926] [bmv2] [D] [thread 26662] [30.0] [cxt 0] Parser 'parser': start
+[21:51:40.926] [bmv2] [D] [thread 26662] [30.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:51:40.926] [bmv2] [D] [thread 26662] [30.0] [cxt 0] Extracting header 'ethernet'
+[21:51:40.926] [bmv2] [D] [thread 26662] [30.0] [cxt 0] Parser state 'start': key is 86dd
+[21:51:40.926] [bmv2] [T] [thread 26662] [30.0] [cxt 0] Bytes parsed: 14
+[21:51:40.926] [bmv2] [D] [thread 26662] [30.0] [cxt 0] Parser 'parser': end
+[21:51:40.926] [bmv2] [D] [thread 26662] [30.0] [cxt 0] Pipeline 'ingress': start
+[21:51:40.926] [bmv2] [T] [thread 26662] [30.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:51:40.926] [bmv2] [T] [thread 26662] [30.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:51:40.926] [bmv2] [T] [thread 26662] [30.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:51:40.926] [bmv2] [D] [thread 26662] [30.0] [cxt 0] Pipeline 'ingress': end
+[21:51:40.926] [bmv2] [D] [thread 26662] [30.0] [cxt 0] Egress port is 0
+[21:51:40.926] [bmv2] [D] [thread 26663] [30.0] [cxt 0] Pipeline 'egress': start
+[21:51:40.926] [bmv2] [D] [thread 26663] [30.0] [cxt 0] Pipeline 'egress': end
+[21:51:40.926] [bmv2] [D] [thread 26663] [30.0] [cxt 0] Deparser 'deparser': start
+[21:51:40.926] [bmv2] [T] [thread 26663] [30.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:51:40.927] [bmv2] [D] [thread 26663] [30.0] [cxt 0] Deparsing header 'ethernet'
+[21:51:40.927] [bmv2] [D] [thread 26663] [30.0] [cxt 0] Deparser 'deparser': end
+[21:51:40.930] [bmv2] [D] [thread 26667] [29.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:51:40.930] [bmv2] [D] [thread 26667] [30.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:51:57.307] [bmv2] [D] [thread 26662] [31.0] [cxt 0] Processing packet received on port 9
+[21:51:57.307] [bmv2] [D] [thread 26662] [31.0] [cxt 0] Parser 'parser': start
+[21:51:57.307] [bmv2] [D] [thread 26662] [31.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:51:57.307] [bmv2] [D] [thread 26662] [31.0] [cxt 0] Extracting header 'ethernet'
+[21:51:57.307] [bmv2] [D] [thread 26662] [31.0] [cxt 0] Parser state 'start': key is 86dd
+[21:51:57.307] [bmv2] [T] [thread 26662] [31.0] [cxt 0] Bytes parsed: 14
+[21:51:57.307] [bmv2] [D] [thread 26662] [31.0] [cxt 0] Parser 'parser': end
+[21:51:57.307] [bmv2] [D] [thread 26662] [31.0] [cxt 0] Pipeline 'ingress': start
+[21:51:57.307] [bmv2] [T] [thread 26662] [31.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:51:57.307] [bmv2] [T] [thread 26662] [31.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:51:57.307] [bmv2] [T] [thread 26662] [31.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:51:57.307] [bmv2] [D] [thread 26662] [31.0] [cxt 0] Pipeline 'ingress': end
+[21:51:57.307] [bmv2] [D] [thread 26662] [31.0] [cxt 0] Egress port is 0
+[21:51:57.307] [bmv2] [D] [thread 26663] [31.0] [cxt 0] Pipeline 'egress': start
+[21:51:57.307] [bmv2] [D] [thread 26663] [31.0] [cxt 0] Pipeline 'egress': end
+[21:51:57.307] [bmv2] [D] [thread 26663] [31.0] [cxt 0] Deparser 'deparser': start
+[21:51:57.307] [bmv2] [T] [thread 26663] [31.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:51:57.307] [bmv2] [D] [thread 26663] [31.0] [cxt 0] Deparsing header 'ethernet'
+[21:51:57.307] [bmv2] [D] [thread 26663] [31.0] [cxt 0] Deparser 'deparser': end
+[21:51:57.307] [bmv2] [D] [thread 26667] [31.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:52:09.033] [bmv2] [D] [thread 26662] [32.0] [cxt 0] Processing packet received on port 3
+[21:52:09.033] [bmv2] [D] [thread 26662] [32.0] [cxt 0] Parser 'parser': start
+[21:52:09.033] [bmv2] [D] [thread 26662] [32.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:52:09.033] [bmv2] [D] [thread 26662] [32.0] [cxt 0] Extracting header 'ethernet'
+[21:52:09.033] [bmv2] [D] [thread 26662] [32.0] [cxt 0] Parser state 'start': key is 86dd
+[21:52:09.034] [bmv2] [T] [thread 26662] [32.0] [cxt 0] Bytes parsed: 14
+[21:52:09.034] [bmv2] [D] [thread 26662] [32.0] [cxt 0] Parser 'parser': end
+[21:52:09.034] [bmv2] [D] [thread 26662] [32.0] [cxt 0] Pipeline 'ingress': start
+[21:52:09.034] [bmv2] [T] [thread 26662] [32.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:52:09.034] [bmv2] [T] [thread 26662] [32.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:52:09.034] [bmv2] [T] [thread 26662] [32.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:52:09.034] [bmv2] [D] [thread 26662] [32.0] [cxt 0] Pipeline 'ingress': end
+[21:52:09.034] [bmv2] [D] [thread 26662] [32.0] [cxt 0] Egress port is 0
+[21:52:09.034] [bmv2] [D] [thread 26663] [32.0] [cxt 0] Pipeline 'egress': start
+[21:52:09.034] [bmv2] [D] [thread 26663] [32.0] [cxt 0] Pipeline 'egress': end
+[21:52:09.034] [bmv2] [D] [thread 26663] [32.0] [cxt 0] Deparser 'deparser': start
+[21:52:09.034] [bmv2] [T] [thread 26663] [32.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:52:09.034] [bmv2] [D] [thread 26663] [32.0] [cxt 0] Deparsing header 'ethernet'
+[21:52:09.034] [bmv2] [D] [thread 26663] [32.0] [cxt 0] Deparser 'deparser': end
+[21:52:09.034] [bmv2] [D] [thread 26667] [32.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[21:52:09.034] [bmv2] [D] [thread 26662] [33.0] [cxt 0] Processing packet received on port 3
+[21:52:09.034] [bmv2] [D] [thread 26662] [33.0] [cxt 0] Parser 'parser': start
+[21:52:09.034] [bmv2] [D] [thread 26662] [33.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:52:09.034] [bmv2] [D] [thread 26662] [33.0] [cxt 0] Extracting header 'ethernet'
+[21:52:09.034] [bmv2] [D] [thread 26662] [33.0] [cxt 0] Parser state 'start': key is 86dd
+[21:52:09.034] [bmv2] [T] [thread 26662] [33.0] [cxt 0] Bytes parsed: 14
+[21:52:09.034] [bmv2] [D] [thread 26662] [33.0] [cxt 0] Parser 'parser': end
+[21:52:09.034] [bmv2] [D] [thread 26662] [33.0] [cxt 0] Pipeline 'ingress': start
+[21:52:09.034] [bmv2] [T] [thread 26662] [33.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:52:09.034] [bmv2] [T] [thread 26662] [33.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:52:09.034] [bmv2] [T] [thread 26662] [33.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:52:09.034] [bmv2] [D] [thread 26662] [33.0] [cxt 0] Pipeline 'ingress': end
+[21:52:09.034] [bmv2] [D] [thread 26662] [33.0] [cxt 0] Egress port is 0
+[21:52:09.034] [bmv2] [D] [thread 26663] [33.0] [cxt 0] Pipeline 'egress': start
+[21:52:09.034] [bmv2] [D] [thread 26663] [33.0] [cxt 0] Pipeline 'egress': end
+[21:52:09.034] [bmv2] [D] [thread 26663] [33.0] [cxt 0] Deparser 'deparser': start
+[21:52:09.034] [bmv2] [T] [thread 26663] [33.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:52:09.034] [bmv2] [D] [thread 26663] [33.0] [cxt 0] Deparsing header 'ethernet'
+[21:52:09.034] [bmv2] [D] [thread 26663] [33.0] [cxt 0] Deparser 'deparser': end
+[21:52:09.034] [bmv2] [D] [thread 26667] [33.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[21:52:13.690] [bmv2] [D] [thread 26662] [34.0] [cxt 0] Processing packet received on port 3
+[21:52:13.690] [bmv2] [D] [thread 26662] [34.0] [cxt 0] Parser 'parser': start
+[21:52:13.690] [bmv2] [D] [thread 26662] [34.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:52:13.690] [bmv2] [D] [thread 26662] [34.0] [cxt 0] Extracting header 'ethernet'
+[21:52:13.690] [bmv2] [D] [thread 26662] [34.0] [cxt 0] Parser state 'start': key is 86dd
+[21:52:13.690] [bmv2] [T] [thread 26662] [34.0] [cxt 0] Bytes parsed: 14
+[21:52:13.690] [bmv2] [D] [thread 26662] [34.0] [cxt 0] Parser 'parser': end
+[21:52:13.690] [bmv2] [D] [thread 26662] [34.0] [cxt 0] Pipeline 'ingress': start
+[21:52:13.690] [bmv2] [T] [thread 26662] [34.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:52:13.690] [bmv2] [T] [thread 26662] [34.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:52:13.690] [bmv2] [T] [thread 26662] [34.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:52:13.690] [bmv2] [D] [thread 26662] [34.0] [cxt 0] Pipeline 'ingress': end
+[21:52:13.690] [bmv2] [D] [thread 26662] [34.0] [cxt 0] Egress port is 0
+[21:52:13.690] [bmv2] [D] [thread 26663] [34.0] [cxt 0] Pipeline 'egress': start
+[21:52:13.690] [bmv2] [D] [thread 26663] [34.0] [cxt 0] Pipeline 'egress': end
+[21:52:13.690] [bmv2] [D] [thread 26663] [34.0] [cxt 0] Deparser 'deparser': start
+[21:52:13.690] [bmv2] [T] [thread 26663] [34.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:52:13.690] [bmv2] [D] [thread 26663] [34.0] [cxt 0] Deparsing header 'ethernet'
+[21:52:13.690] [bmv2] [D] [thread 26663] [34.0] [cxt 0] Deparser 'deparser': end
+[21:52:13.690] [bmv2] [D] [thread 26667] [34.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:52:30.078] [bmv2] [D] [thread 26662] [35.0] [cxt 0] Processing packet received on port 3
+[21:52:30.078] [bmv2] [D] [thread 26662] [35.0] [cxt 0] Parser 'parser': start
+[21:52:30.078] [bmv2] [D] [thread 26662] [35.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:52:30.078] [bmv2] [D] [thread 26662] [35.0] [cxt 0] Extracting header 'ethernet'
+[21:52:30.078] [bmv2] [D] [thread 26662] [35.0] [cxt 0] Parser state 'start': key is 86dd
+[21:52:30.078] [bmv2] [T] [thread 26662] [35.0] [cxt 0] Bytes parsed: 14
+[21:52:30.078] [bmv2] [D] [thread 26662] [35.0] [cxt 0] Parser 'parser': end
+[21:52:30.078] [bmv2] [D] [thread 26662] [35.0] [cxt 0] Pipeline 'ingress': start
+[21:52:30.078] [bmv2] [T] [thread 26662] [35.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:52:30.078] [bmv2] [T] [thread 26662] [35.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:52:30.078] [bmv2] [T] [thread 26662] [35.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:52:30.078] [bmv2] [D] [thread 26662] [35.0] [cxt 0] Pipeline 'ingress': end
+[21:52:30.078] [bmv2] [D] [thread 26662] [35.0] [cxt 0] Egress port is 0
+[21:52:30.078] [bmv2] [D] [thread 26663] [35.0] [cxt 0] Pipeline 'egress': start
+[21:52:30.078] [bmv2] [D] [thread 26663] [35.0] [cxt 0] Pipeline 'egress': end
+[21:52:30.078] [bmv2] [D] [thread 26663] [35.0] [cxt 0] Deparser 'deparser': start
+[21:52:30.078] [bmv2] [T] [thread 26663] [35.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:52:30.078] [bmv2] [D] [thread 26663] [35.0] [cxt 0] Deparsing header 'ethernet'
+[21:52:30.078] [bmv2] [D] [thread 26663] [35.0] [cxt 0] Deparser 'deparser': end
+[21:52:30.078] [bmv2] [D] [thread 26667] [35.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:53:51.999] [bmv2] [D] [thread 26662] [36.0] [cxt 0] Processing packet received on port 5
+[21:53:51.999] [bmv2] [D] [thread 26662] [36.0] [cxt 0] Parser 'parser': start
+[21:53:51.999] [bmv2] [D] [thread 26662] [36.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:53:51.999] [bmv2] [D] [thread 26662] [36.0] [cxt 0] Extracting header 'ethernet'
+[21:53:51.999] [bmv2] [D] [thread 26662] [36.0] [cxt 0] Parser state 'start': key is 86dd
+[21:53:51.999] [bmv2] [T] [thread 26662] [36.0] [cxt 0] Bytes parsed: 14
+[21:53:51.999] [bmv2] [D] [thread 26662] [36.0] [cxt 0] Parser 'parser': end
+[21:53:52.000] [bmv2] [D] [thread 26662] [36.0] [cxt 0] Pipeline 'ingress': start
+[21:53:52.000] [bmv2] [T] [thread 26662] [36.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:53:52.000] [bmv2] [T] [thread 26662] [36.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:53:52.000] [bmv2] [T] [thread 26662] [36.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:53:52.000] [bmv2] [D] [thread 26662] [36.0] [cxt 0] Pipeline 'ingress': end
+[21:53:52.000] [bmv2] [D] [thread 26662] [36.0] [cxt 0] Egress port is 0
+[21:53:52.000] [bmv2] [D] [thread 26663] [36.0] [cxt 0] Pipeline 'egress': start
+[21:53:52.000] [bmv2] [D] [thread 26663] [36.0] [cxt 0] Pipeline 'egress': end
+[21:53:52.000] [bmv2] [D] [thread 26663] [36.0] [cxt 0] Deparser 'deparser': start
+[21:53:52.000] [bmv2] [T] [thread 26663] [36.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:53:52.000] [bmv2] [D] [thread 26663] [36.0] [cxt 0] Deparsing header 'ethernet'
+[21:53:52.000] [bmv2] [D] [thread 26663] [36.0] [cxt 0] Deparser 'deparser': end
+[21:53:52.000] [bmv2] [D] [thread 26667] [36.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:54:24.764] [bmv2] [D] [thread 26662] [37.0] [cxt 0] Processing packet received on port 8
+[21:54:24.764] [bmv2] [D] [thread 26662] [37.0] [cxt 0] Parser 'parser': start
+[21:54:24.764] [bmv2] [D] [thread 26662] [37.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:54:24.764] [bmv2] [D] [thread 26662] [37.0] [cxt 0] Extracting header 'ethernet'
+[21:54:24.765] [bmv2] [D] [thread 26662] [37.0] [cxt 0] Parser state 'start': key is 86dd
+[21:54:24.765] [bmv2] [T] [thread 26662] [37.0] [cxt 0] Bytes parsed: 14
+[21:54:24.765] [bmv2] [D] [thread 26662] [37.0] [cxt 0] Parser 'parser': end
+[21:54:24.765] [bmv2] [D] [thread 26662] [37.0] [cxt 0] Pipeline 'ingress': start
+[21:54:24.765] [bmv2] [T] [thread 26662] [37.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:54:24.765] [bmv2] [T] [thread 26662] [37.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:54:24.765] [bmv2] [T] [thread 26662] [37.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:54:24.765] [bmv2] [D] [thread 26662] [37.0] [cxt 0] Pipeline 'ingress': end
+[21:54:24.765] [bmv2] [D] [thread 26662] [37.0] [cxt 0] Egress port is 0
+[21:54:24.765] [bmv2] [D] [thread 26663] [37.0] [cxt 0] Pipeline 'egress': start
+[21:54:24.765] [bmv2] [D] [thread 26663] [37.0] [cxt 0] Pipeline 'egress': end
+[21:54:24.765] [bmv2] [D] [thread 26663] [37.0] [cxt 0] Deparser 'deparser': start
+[21:54:24.765] [bmv2] [T] [thread 26663] [37.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:54:24.765] [bmv2] [D] [thread 26663] [37.0] [cxt 0] Deparsing header 'ethernet'
+[21:54:24.765] [bmv2] [D] [thread 26663] [37.0] [cxt 0] Deparser 'deparser': end
+[21:54:24.765] [bmv2] [D] [thread 26667] [37.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:54:41.149] [bmv2] [D] [thread 26662] [38.0] [cxt 0] Processing packet received on port 0
+[21:54:41.149] [bmv2] [D] [thread 26662] [38.0] [cxt 0] Parser 'parser': start
+[21:54:41.149] [bmv2] [D] [thread 26662] [38.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:54:41.149] [bmv2] [D] [thread 26662] [38.0] [cxt 0] Extracting header 'ethernet'
+[21:54:41.149] [bmv2] [D] [thread 26662] [38.0] [cxt 0] Parser state 'start': key is 86dd
+[21:54:41.149] [bmv2] [T] [thread 26662] [38.0] [cxt 0] Bytes parsed: 14
+[21:54:41.149] [bmv2] [D] [thread 26662] [38.0] [cxt 0] Parser 'parser': end
+[21:54:41.149] [bmv2] [D] [thread 26662] [38.0] [cxt 0] Pipeline 'ingress': start
+[21:54:41.149] [bmv2] [T] [thread 26662] [38.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:54:41.149] [bmv2] [T] [thread 26662] [38.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:54:41.149] [bmv2] [T] [thread 26662] [38.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:54:41.149] [bmv2] [D] [thread 26662] [38.0] [cxt 0] Pipeline 'ingress': end
+[21:54:41.149] [bmv2] [D] [thread 26662] [38.0] [cxt 0] Egress port is 0
+[21:54:41.149] [bmv2] [D] [thread 26663] [38.0] [cxt 0] Pipeline 'egress': start
+[21:54:41.149] [bmv2] [D] [thread 26663] [38.0] [cxt 0] Pipeline 'egress': end
+[21:54:41.149] [bmv2] [D] [thread 26663] [38.0] [cxt 0] Deparser 'deparser': start
+[21:54:41.149] [bmv2] [T] [thread 26663] [38.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:54:41.149] [bmv2] [D] [thread 26663] [38.0] [cxt 0] Deparsing header 'ethernet'
+[21:54:41.149] [bmv2] [D] [thread 26663] [38.0] [cxt 0] Deparser 'deparser': end
+[21:54:41.149] [bmv2] [D] [thread 26667] [38.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:55:13.916] [bmv2] [D] [thread 26662] [39.0] [cxt 0] Processing packet received on port 5
+[21:55:13.916] [bmv2] [D] [thread 26662] [39.0] [cxt 0] Parser 'parser': start
+[21:55:13.916] [bmv2] [D] [thread 26662] [39.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:55:13.916] [bmv2] [D] [thread 26662] [39.0] [cxt 0] Extracting header 'ethernet'
+[21:55:13.916] [bmv2] [D] [thread 26662] [39.0] [cxt 0] Parser state 'start': key is 86dd
+[21:55:13.916] [bmv2] [T] [thread 26662] [39.0] [cxt 0] Bytes parsed: 14
+[21:55:13.916] [bmv2] [D] [thread 26662] [39.0] [cxt 0] Parser 'parser': end
+[21:55:13.916] [bmv2] [D] [thread 26662] [39.0] [cxt 0] Pipeline 'ingress': start
+[21:55:13.916] [bmv2] [T] [thread 26662] [39.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:55:13.916] [bmv2] [T] [thread 26662] [39.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:55:13.916] [bmv2] [T] [thread 26662] [39.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:55:13.916] [bmv2] [D] [thread 26662] [39.0] [cxt 0] Pipeline 'ingress': end
+[21:55:13.916] [bmv2] [D] [thread 26662] [39.0] [cxt 0] Egress port is 0
+[21:55:13.916] [bmv2] [D] [thread 26663] [39.0] [cxt 0] Pipeline 'egress': start
+[21:55:13.916] [bmv2] [D] [thread 26663] [39.0] [cxt 0] Pipeline 'egress': end
+[21:55:13.916] [bmv2] [D] [thread 26663] [39.0] [cxt 0] Deparser 'deparser': start
+[21:55:13.916] [bmv2] [T] [thread 26663] [39.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:55:13.916] [bmv2] [D] [thread 26663] [39.0] [cxt 0] Deparsing header 'ethernet'
+[21:55:13.916] [bmv2] [D] [thread 26663] [39.0] [cxt 0] Deparser 'deparser': end
+[21:55:13.916] [bmv2] [D] [thread 26667] [39.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:56:03.067] [bmv2] [D] [thread 26662] [40.0] [cxt 0] Processing packet received on port 7
+[21:56:03.067] [bmv2] [D] [thread 26662] [40.0] [cxt 0] Parser 'parser': start
+[21:56:03.067] [bmv2] [D] [thread 26662] [40.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:56:03.067] [bmv2] [D] [thread 26662] [40.0] [cxt 0] Extracting header 'ethernet'
+[21:56:03.067] [bmv2] [D] [thread 26662] [40.0] [cxt 0] Parser state 'start': key is 86dd
+[21:56:03.067] [bmv2] [T] [thread 26662] [40.0] [cxt 0] Bytes parsed: 14
+[21:56:03.067] [bmv2] [D] [thread 26662] [40.0] [cxt 0] Parser 'parser': end
+[21:56:03.067] [bmv2] [D] [thread 26662] [40.0] [cxt 0] Pipeline 'ingress': start
+[21:56:03.067] [bmv2] [T] [thread 26662] [40.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:56:03.067] [bmv2] [T] [thread 26662] [40.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:56:03.067] [bmv2] [T] [thread 26662] [40.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:56:03.067] [bmv2] [D] [thread 26662] [40.0] [cxt 0] Pipeline 'ingress': end
+[21:56:03.067] [bmv2] [D] [thread 26662] [40.0] [cxt 0] Egress port is 0
+[21:56:03.067] [bmv2] [D] [thread 26663] [40.0] [cxt 0] Pipeline 'egress': start
+[21:56:03.067] [bmv2] [D] [thread 26663] [40.0] [cxt 0] Pipeline 'egress': end
+[21:56:03.067] [bmv2] [D] [thread 26663] [40.0] [cxt 0] Deparser 'deparser': start
+[21:56:03.067] [bmv2] [T] [thread 26663] [40.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:56:03.067] [bmv2] [D] [thread 26663] [40.0] [cxt 0] Deparsing header 'ethernet'
+[21:56:03.067] [bmv2] [D] [thread 26663] [40.0] [cxt 0] Deparser 'deparser': end
+[21:56:03.067] [bmv2] [D] [thread 26667] [40.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:56:03.069] [bmv2] [D] [thread 26662] [41.0] [cxt 0] Processing packet received on port 8
+[21:56:03.069] [bmv2] [D] [thread 26662] [41.0] [cxt 0] Parser 'parser': start
+[21:56:03.069] [bmv2] [D] [thread 26662] [41.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:56:03.069] [bmv2] [D] [thread 26662] [41.0] [cxt 0] Extracting header 'ethernet'
+[21:56:03.069] [bmv2] [D] [thread 26662] [41.0] [cxt 0] Parser state 'start': key is 86dd
+[21:56:03.069] [bmv2] [T] [thread 26662] [41.0] [cxt 0] Bytes parsed: 14
+[21:56:03.069] [bmv2] [D] [thread 26662] [41.0] [cxt 0] Parser 'parser': end
+[21:56:03.069] [bmv2] [D] [thread 26662] [41.0] [cxt 0] Pipeline 'ingress': start
+[21:56:03.069] [bmv2] [T] [thread 26662] [41.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:56:03.069] [bmv2] [T] [thread 26662] [41.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:56:03.069] [bmv2] [T] [thread 26662] [41.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:56:03.070] [bmv2] [D] [thread 26662] [41.0] [cxt 0] Pipeline 'ingress': end
+[21:56:03.070] [bmv2] [D] [thread 26662] [41.0] [cxt 0] Egress port is 0
+[21:56:03.070] [bmv2] [D] [thread 26663] [41.0] [cxt 0] Pipeline 'egress': start
+[21:56:03.070] [bmv2] [D] [thread 26663] [41.0] [cxt 0] Pipeline 'egress': end
+[21:56:03.070] [bmv2] [D] [thread 26663] [41.0] [cxt 0] Deparser 'deparser': start
+[21:56:03.070] [bmv2] [T] [thread 26663] [41.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:56:03.070] [bmv2] [D] [thread 26663] [41.0] [cxt 0] Deparsing header 'ethernet'
+[21:56:03.070] [bmv2] [D] [thread 26663] [41.0] [cxt 0] Deparser 'deparser': end
+[21:56:03.070] [bmv2] [D] [thread 26667] [41.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:56:03.071] [bmv2] [D] [thread 26662] [42.0] [cxt 0] Processing packet received on port 9
+[21:56:03.071] [bmv2] [D] [thread 26662] [42.0] [cxt 0] Parser 'parser': start
+[21:56:03.071] [bmv2] [D] [thread 26662] [42.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:56:03.071] [bmv2] [D] [thread 26662] [42.0] [cxt 0] Extracting header 'ethernet'
+[21:56:03.071] [bmv2] [D] [thread 26662] [42.0] [cxt 0] Parser state 'start': key is 86dd
+[21:56:03.071] [bmv2] [T] [thread 26662] [42.0] [cxt 0] Bytes parsed: 14
+[21:56:03.071] [bmv2] [D] [thread 26662] [42.0] [cxt 0] Parser 'parser': end
+[21:56:03.071] [bmv2] [D] [thread 26662] [42.0] [cxt 0] Pipeline 'ingress': start
+[21:56:03.071] [bmv2] [T] [thread 26662] [42.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:56:03.071] [bmv2] [T] [thread 26662] [42.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:56:03.071] [bmv2] [T] [thread 26662] [42.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:56:03.071] [bmv2] [D] [thread 26662] [42.0] [cxt 0] Pipeline 'ingress': end
+[21:56:03.071] [bmv2] [D] [thread 26662] [42.0] [cxt 0] Egress port is 0
+[21:56:03.071] [bmv2] [D] [thread 26663] [42.0] [cxt 0] Pipeline 'egress': start
+[21:56:03.071] [bmv2] [D] [thread 26663] [42.0] [cxt 0] Pipeline 'egress': end
+[21:56:03.071] [bmv2] [D] [thread 26663] [42.0] [cxt 0] Deparser 'deparser': start
+[21:56:03.071] [bmv2] [T] [thread 26663] [42.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:56:03.071] [bmv2] [D] [thread 26663] [42.0] [cxt 0] Deparsing header 'ethernet'
+[21:56:03.071] [bmv2] [D] [thread 26663] [42.0] [cxt 0] Deparser 'deparser': end
+[21:56:03.071] [bmv2] [D] [thread 26667] [42.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:56:52.222] [bmv2] [D] [thread 26662] [43.0] [cxt 0] Processing packet received on port 7
+[21:56:52.222] [bmv2] [D] [thread 26662] [43.0] [cxt 0] Parser 'parser': start
+[21:56:52.222] [bmv2] [D] [thread 26662] [43.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:56:52.222] [bmv2] [D] [thread 26662] [43.0] [cxt 0] Extracting header 'ethernet'
+[21:56:52.222] [bmv2] [D] [thread 26662] [43.0] [cxt 0] Parser state 'start': key is 86dd
+[21:56:52.222] [bmv2] [T] [thread 26662] [43.0] [cxt 0] Bytes parsed: 14
+[21:56:52.222] [bmv2] [D] [thread 26662] [43.0] [cxt 0] Parser 'parser': end
+[21:56:52.222] [bmv2] [D] [thread 26662] [43.0] [cxt 0] Pipeline 'ingress': start
+[21:56:52.222] [bmv2] [T] [thread 26662] [43.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:56:52.222] [bmv2] [T] [thread 26662] [43.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:56:52.222] [bmv2] [T] [thread 26662] [43.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:56:52.222] [bmv2] [D] [thread 26662] [43.0] [cxt 0] Pipeline 'ingress': end
+[21:56:52.222] [bmv2] [D] [thread 26662] [43.0] [cxt 0] Egress port is 0
+[21:56:52.222] [bmv2] [D] [thread 26663] [43.0] [cxt 0] Pipeline 'egress': start
+[21:56:52.222] [bmv2] [D] [thread 26663] [43.0] [cxt 0] Pipeline 'egress': end
+[21:56:52.222] [bmv2] [D] [thread 26663] [43.0] [cxt 0] Deparser 'deparser': start
+[21:56:52.222] [bmv2] [T] [thread 26663] [43.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:56:52.222] [bmv2] [D] [thread 26663] [43.0] [cxt 0] Deparsing header 'ethernet'
+[21:56:52.222] [bmv2] [D] [thread 26663] [43.0] [cxt 0] Deparser 'deparser': end
+[21:56:52.222] [bmv2] [D] [thread 26667] [43.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:57:08.602] [bmv2] [D] [thread 26662] [44.0] [cxt 0] Processing packet received on port 9
+[21:57:08.602] [bmv2] [D] [thread 26662] [44.0] [cxt 0] Parser 'parser': start
+[21:57:08.602] [bmv2] [D] [thread 26662] [44.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:57:08.602] [bmv2] [D] [thread 26662] [44.0] [cxt 0] Extracting header 'ethernet'
+[21:57:08.602] [bmv2] [D] [thread 26662] [44.0] [cxt 0] Parser state 'start': key is 86dd
+[21:57:08.602] [bmv2] [T] [thread 26662] [44.0] [cxt 0] Bytes parsed: 14
+[21:57:08.602] [bmv2] [D] [thread 26662] [44.0] [cxt 0] Parser 'parser': end
+[21:57:08.602] [bmv2] [D] [thread 26662] [44.0] [cxt 0] Pipeline 'ingress': start
+[21:57:08.602] [bmv2] [T] [thread 26662] [44.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:57:08.602] [bmv2] [T] [thread 26662] [44.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:57:08.602] [bmv2] [T] [thread 26662] [44.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:57:08.602] [bmv2] [D] [thread 26662] [44.0] [cxt 0] Pipeline 'ingress': end
+[21:57:08.602] [bmv2] [D] [thread 26662] [44.0] [cxt 0] Egress port is 0
+[21:57:08.603] [bmv2] [D] [thread 26663] [44.0] [cxt 0] Pipeline 'egress': start
+[21:57:08.603] [bmv2] [D] [thread 26663] [44.0] [cxt 0] Pipeline 'egress': end
+[21:57:08.603] [bmv2] [D] [thread 26663] [44.0] [cxt 0] Deparser 'deparser': start
+[21:57:08.603] [bmv2] [T] [thread 26663] [44.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:57:08.603] [bmv2] [D] [thread 26663] [44.0] [cxt 0] Deparsing header 'ethernet'
+[21:57:08.603] [bmv2] [D] [thread 26663] [44.0] [cxt 0] Deparser 'deparser': end
+[21:57:08.603] [bmv2] [D] [thread 26667] [44.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:58:46.908] [bmv2] [D] [thread 26662] [45.0] [cxt 0] Processing packet received on port 2
+[21:58:46.908] [bmv2] [D] [thread 26662] [45.0] [cxt 0] Parser 'parser': start
+[21:58:46.908] [bmv2] [D] [thread 26662] [45.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:58:46.908] [bmv2] [D] [thread 26662] [45.0] [cxt 0] Extracting header 'ethernet'
+[21:58:46.908] [bmv2] [D] [thread 26662] [45.0] [cxt 0] Parser state 'start': key is 86dd
+[21:58:46.908] [bmv2] [T] [thread 26662] [45.0] [cxt 0] Bytes parsed: 14
+[21:58:46.908] [bmv2] [D] [thread 26662] [45.0] [cxt 0] Parser 'parser': end
+[21:58:46.908] [bmv2] [D] [thread 26662] [45.0] [cxt 0] Pipeline 'ingress': start
+[21:58:46.908] [bmv2] [T] [thread 26662] [45.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:58:46.908] [bmv2] [T] [thread 26662] [45.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:58:46.908] [bmv2] [T] [thread 26662] [45.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:58:46.908] [bmv2] [D] [thread 26662] [45.0] [cxt 0] Pipeline 'ingress': end
+[21:58:46.908] [bmv2] [D] [thread 26662] [45.0] [cxt 0] Egress port is 0
+[21:58:46.908] [bmv2] [D] [thread 26663] [45.0] [cxt 0] Pipeline 'egress': start
+[21:58:46.908] [bmv2] [D] [thread 26663] [45.0] [cxt 0] Pipeline 'egress': end
+[21:58:46.908] [bmv2] [D] [thread 26663] [45.0] [cxt 0] Deparser 'deparser': start
+[21:58:46.908] [bmv2] [T] [thread 26663] [45.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:58:46.908] [bmv2] [D] [thread 26663] [45.0] [cxt 0] Deparsing header 'ethernet'
+[21:58:46.908] [bmv2] [D] [thread 26663] [45.0] [cxt 0] Deparser 'deparser': end
+[21:58:46.908] [bmv2] [D] [thread 26667] [45.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:59:19.677] [bmv2] [D] [thread 26662] [46.0] [cxt 0] Processing packet received on port 2
+[21:59:19.677] [bmv2] [D] [thread 26662] [46.0] [cxt 0] Parser 'parser': start
+[21:59:19.677] [bmv2] [D] [thread 26662] [46.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:59:19.677] [bmv2] [D] [thread 26662] [46.0] [cxt 0] Extracting header 'ethernet'
+[21:59:19.677] [bmv2] [D] [thread 26662] [46.0] [cxt 0] Parser state 'start': key is 86dd
+[21:59:19.677] [bmv2] [T] [thread 26662] [46.0] [cxt 0] Bytes parsed: 14
+[21:59:19.677] [bmv2] [D] [thread 26662] [46.0] [cxt 0] Parser 'parser': end
+[21:59:19.677] [bmv2] [D] [thread 26662] [46.0] [cxt 0] Pipeline 'ingress': start
+[21:59:19.677] [bmv2] [T] [thread 26662] [46.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:59:19.677] [bmv2] [T] [thread 26662] [46.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:59:19.677] [bmv2] [T] [thread 26662] [46.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:59:19.677] [bmv2] [D] [thread 26662] [46.0] [cxt 0] Pipeline 'ingress': end
+[21:59:19.677] [bmv2] [D] [thread 26662] [46.0] [cxt 0] Egress port is 0
+[21:59:19.677] [bmv2] [D] [thread 26663] [46.0] [cxt 0] Pipeline 'egress': start
+[21:59:19.677] [bmv2] [D] [thread 26663] [46.0] [cxt 0] Pipeline 'egress': end
+[21:59:19.677] [bmv2] [D] [thread 26663] [46.0] [cxt 0] Deparser 'deparser': start
+[21:59:19.677] [bmv2] [T] [thread 26663] [46.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:59:19.677] [bmv2] [D] [thread 26663] [46.0] [cxt 0] Deparsing header 'ethernet'
+[21:59:19.677] [bmv2] [D] [thread 26663] [46.0] [cxt 0] Deparser 'deparser': end
+[21:59:19.677] [bmv2] [D] [thread 26667] [46.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:59:41.791] [bmv2] [D] [thread 26662] [47.0] [cxt 0] Processing packet received on port 2
+[21:59:41.791] [bmv2] [D] [thread 26662] [47.0] [cxt 0] Parser 'parser': start
+[21:59:41.791] [bmv2] [D] [thread 26662] [47.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:59:41.791] [bmv2] [D] [thread 26662] [47.0] [cxt 0] Extracting header 'ethernet'
+[21:59:41.791] [bmv2] [D] [thread 26662] [47.0] [cxt 0] Parser state 'start': key is 86dd
+[21:59:41.791] [bmv2] [T] [thread 26662] [47.0] [cxt 0] Bytes parsed: 14
+[21:59:41.791] [bmv2] [D] [thread 26662] [47.0] [cxt 0] Parser 'parser': end
+[21:59:41.791] [bmv2] [D] [thread 26662] [47.0] [cxt 0] Pipeline 'ingress': start
+[21:59:41.791] [bmv2] [T] [thread 26662] [47.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:59:41.791] [bmv2] [T] [thread 26662] [47.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:59:41.791] [bmv2] [T] [thread 26662] [47.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:59:41.791] [bmv2] [D] [thread 26662] [47.0] [cxt 0] Pipeline 'ingress': end
+[21:59:41.791] [bmv2] [D] [thread 26662] [47.0] [cxt 0] Egress port is 0
+[21:59:41.791] [bmv2] [D] [thread 26662] [48.0] [cxt 0] Processing packet received on port 2
+[21:59:41.791] [bmv2] [D] [thread 26662] [48.0] [cxt 0] Parser 'parser': start
+[21:59:41.791] [bmv2] [D] [thread 26662] [48.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:59:41.791] [bmv2] [D] [thread 26662] [48.0] [cxt 0] Extracting header 'ethernet'
+[21:59:41.791] [bmv2] [D] [thread 26662] [48.0] [cxt 0] Parser state 'start': key is 86dd
+[21:59:41.791] [bmv2] [T] [thread 26662] [48.0] [cxt 0] Bytes parsed: 14
+[21:59:41.791] [bmv2] [D] [thread 26663] [47.0] [cxt 0] Pipeline 'egress': start
+[21:59:41.791] [bmv2] [D] [thread 26663] [47.0] [cxt 0] Pipeline 'egress': end
+[21:59:41.791] [bmv2] [D] [thread 26663] [47.0] [cxt 0] Deparser 'deparser': start
+[21:59:41.791] [bmv2] [T] [thread 26663] [47.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:59:41.791] [bmv2] [D] [thread 26663] [47.0] [cxt 0] Deparsing header 'ethernet'
+[21:59:41.791] [bmv2] [D] [thread 26663] [47.0] [cxt 0] Deparser 'deparser': end
+[21:59:41.791] [bmv2] [D] [thread 26667] [47.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[21:59:41.791] [bmv2] [D] [thread 26662] [48.0] [cxt 0] Parser 'parser': end
+[21:59:41.792] [bmv2] [D] [thread 26662] [48.0] [cxt 0] Pipeline 'ingress': start
+[21:59:41.792] [bmv2] [T] [thread 26662] [48.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[21:59:41.792] [bmv2] [T] [thread 26662] [48.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[21:59:41.792] [bmv2] [T] [thread 26662] [48.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:59:41.792] [bmv2] [D] [thread 26662] [48.0] [cxt 0] Pipeline 'ingress': end
+[21:59:41.792] [bmv2] [D] [thread 26662] [48.0] [cxt 0] Egress port is 0
+[21:59:41.792] [bmv2] [D] [thread 26663] [48.0] [cxt 0] Pipeline 'egress': start
+[21:59:41.792] [bmv2] [D] [thread 26663] [48.0] [cxt 0] Pipeline 'egress': end
+[21:59:41.792] [bmv2] [D] [thread 26663] [48.0] [cxt 0] Deparser 'deparser': start
+[21:59:41.792] [bmv2] [T] [thread 26663] [48.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:59:41.792] [bmv2] [D] [thread 26663] [48.0] [cxt 0] Deparsing header 'ethernet'
+[21:59:41.792] [bmv2] [D] [thread 26663] [48.0] [cxt 0] Deparser 'deparser': end
+[21:59:41.792] [bmv2] [D] [thread 26667] [48.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[22:00:41.035] [bmv2] [D] [thread 26662] [49.0] [cxt 0] Processing packet received on port 3
+[22:00:41.035] [bmv2] [D] [thread 26662] [49.0] [cxt 0] Parser 'parser': start
+[22:00:41.035] [bmv2] [D] [thread 26662] [49.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:00:41.035] [bmv2] [D] [thread 26662] [49.0] [cxt 0] Extracting header 'ethernet'
+[22:00:41.035] [bmv2] [D] [thread 26662] [49.0] [cxt 0] Parser state 'start': key is 86dd
+[22:00:41.035] [bmv2] [T] [thread 26662] [49.0] [cxt 0] Bytes parsed: 14
+[22:00:41.035] [bmv2] [D] [thread 26662] [49.0] [cxt 0] Parser 'parser': end
+[22:00:41.035] [bmv2] [D] [thread 26662] [49.0] [cxt 0] Pipeline 'ingress': start
+[22:00:41.035] [bmv2] [T] [thread 26662] [49.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:00:41.035] [bmv2] [T] [thread 26662] [49.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:00:41.035] [bmv2] [T] [thread 26662] [49.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:00:41.035] [bmv2] [D] [thread 26662] [49.0] [cxt 0] Pipeline 'ingress': end
+[22:00:41.035] [bmv2] [D] [thread 26662] [49.0] [cxt 0] Egress port is 0
+[22:00:41.035] [bmv2] [D] [thread 26662] [50.0] [cxt 0] Processing packet received on port 3
+[22:00:41.035] [bmv2] [D] [thread 26662] [50.0] [cxt 0] Parser 'parser': start
+[22:00:41.035] [bmv2] [D] [thread 26662] [50.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:00:41.035] [bmv2] [D] [thread 26662] [50.0] [cxt 0] Extracting header 'ethernet'
+[22:00:41.035] [bmv2] [D] [thread 26662] [50.0] [cxt 0] Parser state 'start': key is 86dd
+[22:00:41.035] [bmv2] [T] [thread 26662] [50.0] [cxt 0] Bytes parsed: 14
+[22:00:41.035] [bmv2] [D] [thread 26662] [50.0] [cxt 0] Parser 'parser': end
+[22:00:41.035] [bmv2] [D] [thread 26662] [50.0] [cxt 0] Pipeline 'ingress': start
+[22:00:41.035] [bmv2] [T] [thread 26662] [50.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:00:41.035] [bmv2] [T] [thread 26662] [50.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:00:41.035] [bmv2] [T] [thread 26662] [50.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:00:41.035] [bmv2] [D] [thread 26662] [50.0] [cxt 0] Pipeline 'ingress': end
+[22:00:41.035] [bmv2] [D] [thread 26662] [50.0] [cxt 0] Egress port is 0
+[22:00:41.035] [bmv2] [D] [thread 26663] [49.0] [cxt 0] Pipeline 'egress': start
+[22:00:41.035] [bmv2] [D] [thread 26663] [49.0] [cxt 0] Pipeline 'egress': end
+[22:00:41.035] [bmv2] [D] [thread 26663] [49.0] [cxt 0] Deparser 'deparser': start
+[22:00:41.035] [bmv2] [T] [thread 26663] [49.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:00:41.035] [bmv2] [D] [thread 26663] [49.0] [cxt 0] Deparsing header 'ethernet'
+[22:00:41.035] [bmv2] [D] [thread 26663] [49.0] [cxt 0] Deparser 'deparser': end
+[22:00:41.035] [bmv2] [D] [thread 26663] [50.0] [cxt 0] Pipeline 'egress': start
+[22:00:41.035] [bmv2] [D] [thread 26663] [50.0] [cxt 0] Pipeline 'egress': end
+[22:00:41.035] [bmv2] [D] [thread 26663] [50.0] [cxt 0] Deparser 'deparser': start
+[22:00:41.035] [bmv2] [T] [thread 26663] [50.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:00:41.035] [bmv2] [D] [thread 26663] [50.0] [cxt 0] Deparsing header 'ethernet'
+[22:00:41.035] [bmv2] [D] [thread 26663] [50.0] [cxt 0] Deparser 'deparser': end
+[22:00:41.035] [bmv2] [D] [thread 26667] [49.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[22:00:41.035] [bmv2] [D] [thread 26667] [50.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[22:00:57.983] [bmv2] [D] [thread 26662] [51.0] [cxt 0] Processing packet received on port 5
+[22:00:57.983] [bmv2] [D] [thread 26662] [51.0] [cxt 0] Parser 'parser': start
+[22:00:57.983] [bmv2] [D] [thread 26662] [51.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:00:57.983] [bmv2] [D] [thread 26662] [51.0] [cxt 0] Extracting header 'ethernet'
+[22:00:57.983] [bmv2] [D] [thread 26662] [51.0] [cxt 0] Parser state 'start': key is 86dd
+[22:00:57.983] [bmv2] [T] [thread 26662] [51.0] [cxt 0] Bytes parsed: 14
+[22:00:57.983] [bmv2] [D] [thread 26662] [51.0] [cxt 0] Parser 'parser': end
+[22:00:57.983] [bmv2] [D] [thread 26662] [51.0] [cxt 0] Pipeline 'ingress': start
+[22:00:57.983] [bmv2] [T] [thread 26662] [51.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:00:57.983] [bmv2] [T] [thread 26662] [51.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:00:57.983] [bmv2] [T] [thread 26662] [51.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:00:57.983] [bmv2] [D] [thread 26662] [51.0] [cxt 0] Pipeline 'ingress': end
+[22:00:57.983] [bmv2] [D] [thread 26662] [51.0] [cxt 0] Egress port is 0
+[22:00:57.983] [bmv2] [D] [thread 26663] [51.0] [cxt 0] Pipeline 'egress': start
+[22:00:57.983] [bmv2] [D] [thread 26663] [51.0] [cxt 0] Pipeline 'egress': end
+[22:00:57.983] [bmv2] [D] [thread 26663] [51.0] [cxt 0] Deparser 'deparser': start
+[22:00:57.983] [bmv2] [T] [thread 26663] [51.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:00:57.983] [bmv2] [D] [thread 26663] [51.0] [cxt 0] Deparsing header 'ethernet'
+[22:00:57.983] [bmv2] [D] [thread 26663] [51.0] [cxt 0] Deparser 'deparser': end
+[22:00:57.984] [bmv2] [D] [thread 26667] [51.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:01:14.364] [bmv2] [D] [thread 26662] [52.0] [cxt 0] Processing packet received on port 8
+[22:01:14.364] [bmv2] [D] [thread 26662] [52.0] [cxt 0] Parser 'parser': start
+[22:01:14.364] [bmv2] [D] [thread 26662] [52.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:01:14.364] [bmv2] [D] [thread 26662] [52.0] [cxt 0] Extracting header 'ethernet'
+[22:01:14.364] [bmv2] [D] [thread 26662] [52.0] [cxt 0] Parser state 'start': key is 86dd
+[22:01:14.364] [bmv2] [T] [thread 26662] [52.0] [cxt 0] Bytes parsed: 14
+[22:01:14.364] [bmv2] [D] [thread 26662] [52.0] [cxt 0] Parser 'parser': end
+[22:01:14.364] [bmv2] [D] [thread 26662] [52.0] [cxt 0] Pipeline 'ingress': start
+[22:01:14.364] [bmv2] [T] [thread 26662] [52.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:01:14.364] [bmv2] [T] [thread 26662] [52.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:01:14.364] [bmv2] [T] [thread 26662] [52.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:01:14.364] [bmv2] [D] [thread 26662] [52.0] [cxt 0] Pipeline 'ingress': end
+[22:01:14.365] [bmv2] [D] [thread 26662] [52.0] [cxt 0] Egress port is 0
+[22:01:14.365] [bmv2] [D] [thread 26663] [52.0] [cxt 0] Pipeline 'egress': start
+[22:01:14.365] [bmv2] [D] [thread 26663] [52.0] [cxt 0] Pipeline 'egress': end
+[22:01:14.365] [bmv2] [D] [thread 26663] [52.0] [cxt 0] Deparser 'deparser': start
+[22:01:14.365] [bmv2] [T] [thread 26663] [52.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:01:14.365] [bmv2] [D] [thread 26663] [52.0] [cxt 0] Deparsing header 'ethernet'
+[22:01:14.365] [bmv2] [D] [thread 26663] [52.0] [cxt 0] Deparser 'deparser': end
+[22:01:14.365] [bmv2] [D] [thread 26667] [52.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:01:14.365] [bmv2] [D] [thread 26662] [53.0] [cxt 0] Processing packet received on port 3
+[22:01:14.365] [bmv2] [D] [thread 26662] [53.0] [cxt 0] Parser 'parser': start
+[22:01:14.365] [bmv2] [D] [thread 26662] [53.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:01:14.365] [bmv2] [D] [thread 26662] [53.0] [cxt 0] Extracting header 'ethernet'
+[22:01:14.365] [bmv2] [D] [thread 26662] [53.0] [cxt 0] Parser state 'start': key is 86dd
+[22:01:14.365] [bmv2] [T] [thread 26662] [53.0] [cxt 0] Bytes parsed: 14
+[22:01:14.365] [bmv2] [D] [thread 26662] [53.0] [cxt 0] Parser 'parser': end
+[22:01:14.365] [bmv2] [D] [thread 26662] [53.0] [cxt 0] Pipeline 'ingress': start
+[22:01:14.365] [bmv2] [T] [thread 26662] [53.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:01:14.365] [bmv2] [T] [thread 26662] [53.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:01:14.365] [bmv2] [T] [thread 26662] [53.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:01:14.366] [bmv2] [D] [thread 26662] [53.0] [cxt 0] Pipeline 'ingress': end
+[22:01:14.366] [bmv2] [D] [thread 26662] [53.0] [cxt 0] Egress port is 0
+[22:01:14.368] [bmv2] [D] [thread 26663] [53.0] [cxt 0] Pipeline 'egress': start
+[22:01:14.368] [bmv2] [D] [thread 26663] [53.0] [cxt 0] Pipeline 'egress': end
+[22:01:14.368] [bmv2] [D] [thread 26663] [53.0] [cxt 0] Deparser 'deparser': start
+[22:01:14.368] [bmv2] [T] [thread 26663] [53.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:01:14.368] [bmv2] [D] [thread 26663] [53.0] [cxt 0] Deparsing header 'ethernet'
+[22:01:14.368] [bmv2] [D] [thread 26663] [53.0] [cxt 0] Deparser 'deparser': end
+[22:01:14.368] [bmv2] [D] [thread 26667] [53.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:01:47.131] [bmv2] [D] [thread 26662] [54.0] [cxt 0] Processing packet received on port 3
+[22:01:47.131] [bmv2] [D] [thread 26662] [54.0] [cxt 0] Parser 'parser': start
+[22:01:47.131] [bmv2] [D] [thread 26662] [54.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:01:47.131] [bmv2] [D] [thread 26662] [54.0] [cxt 0] Extracting header 'ethernet'
+[22:01:47.131] [bmv2] [D] [thread 26662] [54.0] [cxt 0] Parser state 'start': key is 86dd
+[22:01:47.131] [bmv2] [T] [thread 26662] [54.0] [cxt 0] Bytes parsed: 14
+[22:01:47.131] [bmv2] [D] [thread 26662] [54.0] [cxt 0] Parser 'parser': end
+[22:01:47.131] [bmv2] [D] [thread 26662] [54.0] [cxt 0] Pipeline 'ingress': start
+[22:01:47.131] [bmv2] [T] [thread 26662] [54.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:01:47.131] [bmv2] [T] [thread 26662] [54.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:01:47.131] [bmv2] [T] [thread 26662] [54.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:01:47.131] [bmv2] [D] [thread 26662] [54.0] [cxt 0] Pipeline 'ingress': end
+[22:01:47.131] [bmv2] [D] [thread 26662] [54.0] [cxt 0] Egress port is 0
+[22:01:47.131] [bmv2] [D] [thread 26663] [54.0] [cxt 0] Pipeline 'egress': start
+[22:01:47.131] [bmv2] [D] [thread 26663] [54.0] [cxt 0] Pipeline 'egress': end
+[22:01:47.131] [bmv2] [D] [thread 26663] [54.0] [cxt 0] Deparser 'deparser': start
+[22:01:47.131] [bmv2] [T] [thread 26663] [54.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:01:47.131] [bmv2] [D] [thread 26663] [54.0] [cxt 0] Deparsing header 'ethernet'
+[22:01:47.131] [bmv2] [D] [thread 26663] [54.0] [cxt 0] Deparser 'deparser': end
+[22:01:47.131] [bmv2] [D] [thread 26667] [54.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:02:19.899] [bmv2] [D] [thread 26662] [55.0] [cxt 0] Processing packet received on port 0
+[22:02:19.899] [bmv2] [D] [thread 26662] [55.0] [cxt 0] Parser 'parser': start
+[22:02:19.899] [bmv2] [D] [thread 26662] [55.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:02:19.899] [bmv2] [D] [thread 26662] [55.0] [cxt 0] Extracting header 'ethernet'
+[22:02:19.899] [bmv2] [D] [thread 26662] [55.0] [cxt 0] Parser state 'start': key is 86dd
+[22:02:19.899] [bmv2] [T] [thread 26662] [55.0] [cxt 0] Bytes parsed: 14
+[22:02:19.899] [bmv2] [D] [thread 26662] [55.0] [cxt 0] Parser 'parser': end
+[22:02:19.899] [bmv2] [D] [thread 26662] [55.0] [cxt 0] Pipeline 'ingress': start
+[22:02:19.899] [bmv2] [T] [thread 26662] [55.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:02:19.899] [bmv2] [T] [thread 26662] [55.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:02:19.899] [bmv2] [T] [thread 26662] [55.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:02:19.899] [bmv2] [D] [thread 26662] [55.0] [cxt 0] Pipeline 'ingress': end
+[22:02:19.900] [bmv2] [D] [thread 26662] [55.0] [cxt 0] Egress port is 0
+[22:02:19.900] [bmv2] [D] [thread 26663] [55.0] [cxt 0] Pipeline 'egress': start
+[22:02:19.900] [bmv2] [D] [thread 26663] [55.0] [cxt 0] Pipeline 'egress': end
+[22:02:19.900] [bmv2] [D] [thread 26663] [55.0] [cxt 0] Deparser 'deparser': start
+[22:02:19.900] [bmv2] [T] [thread 26663] [55.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:02:19.900] [bmv2] [D] [thread 26663] [55.0] [cxt 0] Deparsing header 'ethernet'
+[22:02:19.900] [bmv2] [D] [thread 26663] [55.0] [cxt 0] Deparser 'deparser': end
+[22:02:19.900] [bmv2] [D] [thread 26667] [55.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:03:58.204] [bmv2] [D] [thread 26662] [56.0] [cxt 0] Processing packet received on port 5
+[22:03:58.204] [bmv2] [D] [thread 26662] [56.0] [cxt 0] Parser 'parser': start
+[22:03:58.204] [bmv2] [D] [thread 26662] [56.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:03:58.204] [bmv2] [D] [thread 26662] [56.0] [cxt 0] Extracting header 'ethernet'
+[22:03:58.204] [bmv2] [D] [thread 26662] [56.0] [cxt 0] Parser state 'start': key is 86dd
+[22:03:58.204] [bmv2] [T] [thread 26662] [56.0] [cxt 0] Bytes parsed: 14
+[22:03:58.204] [bmv2] [D] [thread 26662] [56.0] [cxt 0] Parser 'parser': end
+[22:03:58.205] [bmv2] [D] [thread 26662] [56.0] [cxt 0] Pipeline 'ingress': start
+[22:03:58.205] [bmv2] [T] [thread 26662] [56.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:03:58.205] [bmv2] [T] [thread 26662] [56.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:03:58.205] [bmv2] [T] [thread 26662] [56.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:03:58.205] [bmv2] [D] [thread 26662] [56.0] [cxt 0] Pipeline 'ingress': end
+[22:03:58.205] [bmv2] [D] [thread 26662] [56.0] [cxt 0] Egress port is 0
+[22:03:58.205] [bmv2] [D] [thread 26663] [56.0] [cxt 0] Pipeline 'egress': start
+[22:03:58.205] [bmv2] [D] [thread 26663] [56.0] [cxt 0] Pipeline 'egress': end
+[22:03:58.205] [bmv2] [D] [thread 26663] [56.0] [cxt 0] Deparser 'deparser': start
+[22:03:58.205] [bmv2] [T] [thread 26663] [56.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:03:58.205] [bmv2] [D] [thread 26663] [56.0] [cxt 0] Deparsing header 'ethernet'
+[22:03:58.205] [bmv2] [D] [thread 26663] [56.0] [cxt 0] Deparser 'deparser': end
+[22:03:58.205] [bmv2] [D] [thread 26667] [56.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:05:03.742] [bmv2] [D] [thread 26662] [57.0] [cxt 0] Processing packet received on port 8
+[22:05:03.743] [bmv2] [D] [thread 26662] [57.0] [cxt 0] Parser 'parser': start
+[22:05:03.743] [bmv2] [D] [thread 26662] [57.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:05:03.743] [bmv2] [D] [thread 26662] [57.0] [cxt 0] Extracting header 'ethernet'
+[22:05:03.743] [bmv2] [D] [thread 26662] [57.0] [cxt 0] Parser state 'start': key is 86dd
+[22:05:03.743] [bmv2] [T] [thread 26662] [57.0] [cxt 0] Bytes parsed: 14
+[22:05:03.743] [bmv2] [D] [thread 26662] [57.0] [cxt 0] Parser 'parser': end
+[22:05:03.743] [bmv2] [D] [thread 26662] [57.0] [cxt 0] Pipeline 'ingress': start
+[22:05:03.743] [bmv2] [T] [thread 26662] [57.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:05:03.743] [bmv2] [T] [thread 26662] [57.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:05:03.743] [bmv2] [T] [thread 26662] [57.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:05:03.743] [bmv2] [D] [thread 26662] [57.0] [cxt 0] Pipeline 'ingress': end
+[22:05:03.743] [bmv2] [D] [thread 26662] [57.0] [cxt 0] Egress port is 0
+[22:05:03.743] [bmv2] [D] [thread 26663] [57.0] [cxt 0] Pipeline 'egress': start
+[22:05:03.743] [bmv2] [D] [thread 26663] [57.0] [cxt 0] Pipeline 'egress': end
+[22:05:03.743] [bmv2] [D] [thread 26663] [57.0] [cxt 0] Deparser 'deparser': start
+[22:05:03.743] [bmv2] [T] [thread 26663] [57.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:05:03.743] [bmv2] [D] [thread 26663] [57.0] [cxt 0] Deparsing header 'ethernet'
+[22:05:03.743] [bmv2] [D] [thread 26663] [57.0] [cxt 0] Deparser 'deparser': end
+[22:05:03.743] [bmv2] [D] [thread 26667] [57.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:05:03.744] [bmv2] [D] [thread 26662] [58.0] [cxt 0] Processing packet received on port 9
+[22:05:03.744] [bmv2] [D] [thread 26662] [58.0] [cxt 0] Parser 'parser': start
+[22:05:03.744] [bmv2] [D] [thread 26662] [58.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:05:03.744] [bmv2] [D] [thread 26662] [58.0] [cxt 0] Extracting header 'ethernet'
+[22:05:03.744] [bmv2] [D] [thread 26662] [58.0] [cxt 0] Parser state 'start': key is 86dd
+[22:05:03.744] [bmv2] [T] [thread 26662] [58.0] [cxt 0] Bytes parsed: 14
+[22:05:03.744] [bmv2] [D] [thread 26662] [58.0] [cxt 0] Parser 'parser': end
+[22:05:03.744] [bmv2] [D] [thread 26662] [58.0] [cxt 0] Pipeline 'ingress': start
+[22:05:03.744] [bmv2] [T] [thread 26662] [58.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:05:03.744] [bmv2] [T] [thread 26662] [58.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:05:03.744] [bmv2] [T] [thread 26662] [58.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:05:03.744] [bmv2] [D] [thread 26662] [58.0] [cxt 0] Pipeline 'ingress': end
+[22:05:03.744] [bmv2] [D] [thread 26662] [58.0] [cxt 0] Egress port is 0
+[22:05:03.745] [bmv2] [D] [thread 26663] [58.0] [cxt 0] Pipeline 'egress': start
+[22:05:03.745] [bmv2] [D] [thread 26663] [58.0] [cxt 0] Pipeline 'egress': end
+[22:05:03.745] [bmv2] [D] [thread 26663] [58.0] [cxt 0] Deparser 'deparser': start
+[22:05:03.745] [bmv2] [T] [thread 26663] [58.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:05:03.745] [bmv2] [D] [thread 26663] [58.0] [cxt 0] Deparsing header 'ethernet'
+[22:05:03.745] [bmv2] [D] [thread 26663] [58.0] [cxt 0] Deparser 'deparser': end
+[22:05:03.746] [bmv2] [D] [thread 26667] [58.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:05:36.508] [bmv2] [D] [thread 26662] [59.0] [cxt 0] Processing packet received on port 7
+[22:05:36.508] [bmv2] [D] [thread 26662] [59.0] [cxt 0] Parser 'parser': start
+[22:05:36.508] [bmv2] [D] [thread 26662] [59.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:05:36.508] [bmv2] [D] [thread 26662] [59.0] [cxt 0] Extracting header 'ethernet'
+[22:05:36.508] [bmv2] [D] [thread 26662] [59.0] [cxt 0] Parser state 'start': key is 86dd
+[22:05:36.508] [bmv2] [T] [thread 26662] [59.0] [cxt 0] Bytes parsed: 14
+[22:05:36.508] [bmv2] [D] [thread 26662] [59.0] [cxt 0] Parser 'parser': end
+[22:05:36.508] [bmv2] [D] [thread 26662] [59.0] [cxt 0] Pipeline 'ingress': start
+[22:05:36.508] [bmv2] [T] [thread 26662] [59.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:05:36.508] [bmv2] [T] [thread 26662] [59.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:05:36.508] [bmv2] [T] [thread 26662] [59.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:05:36.508] [bmv2] [D] [thread 26662] [59.0] [cxt 0] Pipeline 'ingress': end
+[22:05:36.508] [bmv2] [D] [thread 26662] [59.0] [cxt 0] Egress port is 0
+[22:05:36.508] [bmv2] [D] [thread 26663] [59.0] [cxt 0] Pipeline 'egress': start
+[22:05:36.508] [bmv2] [D] [thread 26663] [59.0] [cxt 0] Pipeline 'egress': end
+[22:05:36.508] [bmv2] [D] [thread 26663] [59.0] [cxt 0] Deparser 'deparser': start
+[22:05:36.508] [bmv2] [T] [thread 26663] [59.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:05:36.508] [bmv2] [D] [thread 26663] [59.0] [cxt 0] Deparsing header 'ethernet'
+[22:05:36.508] [bmv2] [D] [thread 26663] [59.0] [cxt 0] Deparser 'deparser': end
+[22:05:36.509] [bmv2] [D] [thread 26667] [59.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:06:42.046] [bmv2] [D] [thread 26662] [60.0] [cxt 0] Processing packet received on port 9
+[22:06:42.046] [bmv2] [D] [thread 26662] [60.0] [cxt 0] Parser 'parser': start
+[22:06:42.046] [bmv2] [D] [thread 26662] [60.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:06:42.046] [bmv2] [D] [thread 26662] [60.0] [cxt 0] Extracting header 'ethernet'
+[22:06:42.046] [bmv2] [D] [thread 26662] [60.0] [cxt 0] Parser state 'start': key is 86dd
+[22:06:42.046] [bmv2] [T] [thread 26662] [60.0] [cxt 0] Bytes parsed: 14
+[22:06:42.046] [bmv2] [D] [thread 26662] [60.0] [cxt 0] Parser 'parser': end
+[22:06:42.046] [bmv2] [D] [thread 26662] [60.0] [cxt 0] Pipeline 'ingress': start
+[22:06:42.046] [bmv2] [T] [thread 26662] [60.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:06:42.046] [bmv2] [T] [thread 26662] [60.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:06:42.047] [bmv2] [T] [thread 26662] [60.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:06:42.047] [bmv2] [D] [thread 26662] [60.0] [cxt 0] Pipeline 'ingress': end
+[22:06:42.047] [bmv2] [D] [thread 26662] [60.0] [cxt 0] Egress port is 0
+[22:06:42.047] [bmv2] [D] [thread 26663] [60.0] [cxt 0] Pipeline 'egress': start
+[22:06:42.047] [bmv2] [D] [thread 26663] [60.0] [cxt 0] Pipeline 'egress': end
+[22:06:42.047] [bmv2] [D] [thread 26663] [60.0] [cxt 0] Deparser 'deparser': start
+[22:06:42.047] [bmv2] [T] [thread 26663] [60.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:06:42.047] [bmv2] [D] [thread 26663] [60.0] [cxt 0] Deparsing header 'ethernet'
+[22:06:42.047] [bmv2] [D] [thread 26663] [60.0] [cxt 0] Deparser 'deparser': end
+[22:06:42.047] [bmv2] [D] [thread 26667] [60.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:07:14.813] [bmv2] [D] [thread 26662] [61.0] [cxt 0] Processing packet received on port 7
+[22:07:14.814] [bmv2] [D] [thread 26662] [61.0] [cxt 0] Parser 'parser': start
+[22:07:14.814] [bmv2] [D] [thread 26662] [61.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:07:14.814] [bmv2] [D] [thread 26662] [61.0] [cxt 0] Extracting header 'ethernet'
+[22:07:14.814] [bmv2] [D] [thread 26662] [61.0] [cxt 0] Parser state 'start': key is 86dd
+[22:07:14.814] [bmv2] [T] [thread 26662] [61.0] [cxt 0] Bytes parsed: 14
+[22:07:14.814] [bmv2] [D] [thread 26662] [61.0] [cxt 0] Parser 'parser': end
+[22:07:14.814] [bmv2] [D] [thread 26662] [61.0] [cxt 0] Pipeline 'ingress': start
+[22:07:14.814] [bmv2] [T] [thread 26662] [61.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:07:14.814] [bmv2] [T] [thread 26662] [61.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:07:14.814] [bmv2] [T] [thread 26662] [61.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:07:14.814] [bmv2] [D] [thread 26662] [61.0] [cxt 0] Pipeline 'ingress': end
+[22:07:14.814] [bmv2] [D] [thread 26662] [61.0] [cxt 0] Egress port is 0
+[22:07:14.814] [bmv2] [D] [thread 26663] [61.0] [cxt 0] Pipeline 'egress': start
+[22:07:14.814] [bmv2] [D] [thread 26663] [61.0] [cxt 0] Pipeline 'egress': end
+[22:07:14.814] [bmv2] [D] [thread 26663] [61.0] [cxt 0] Deparser 'deparser': start
+[22:07:14.814] [bmv2] [T] [thread 26663] [61.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:07:14.814] [bmv2] [D] [thread 26663] [61.0] [cxt 0] Deparsing header 'ethernet'
+[22:07:14.814] [bmv2] [D] [thread 26663] [61.0] [cxt 0] Deparser 'deparser': end
+[22:07:14.814] [bmv2] [D] [thread 26667] [61.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:14:37.177] [bmv2] [D] [thread 26662] [62.0] [cxt 0] Processing packet received on port 2
+[22:14:37.178] [bmv2] [D] [thread 26662] [62.0] [cxt 0] Parser 'parser': start
+[22:14:37.178] [bmv2] [D] [thread 26662] [62.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:14:37.178] [bmv2] [D] [thread 26662] [62.0] [cxt 0] Extracting header 'ethernet'
+[22:14:37.178] [bmv2] [D] [thread 26662] [62.0] [cxt 0] Parser state 'start': key is 86dd
+[22:14:37.178] [bmv2] [T] [thread 26662] [62.0] [cxt 0] Bytes parsed: 14
+[22:14:37.178] [bmv2] [D] [thread 26662] [62.0] [cxt 0] Parser 'parser': end
+[22:14:37.178] [bmv2] [D] [thread 26662] [62.0] [cxt 0] Pipeline 'ingress': start
+[22:14:37.178] [bmv2] [T] [thread 26662] [62.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:14:37.178] [bmv2] [T] [thread 26662] [62.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:14:37.178] [bmv2] [T] [thread 26662] [62.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:14:37.178] [bmv2] [D] [thread 26662] [62.0] [cxt 0] Pipeline 'ingress': end
+[22:14:37.178] [bmv2] [D] [thread 26662] [62.0] [cxt 0] Egress port is 0
+[22:14:37.178] [bmv2] [D] [thread 26662] [63.0] [cxt 0] Processing packet received on port 5
+[22:14:37.178] [bmv2] [D] [thread 26662] [63.0] [cxt 0] Parser 'parser': start
+[22:14:37.178] [bmv2] [D] [thread 26662] [63.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:14:37.178] [bmv2] [D] [thread 26662] [63.0] [cxt 0] Extracting header 'ethernet'
+[22:14:37.178] [bmv2] [D] [thread 26662] [63.0] [cxt 0] Parser state 'start': key is 86dd
+[22:14:37.178] [bmv2] [T] [thread 26662] [63.0] [cxt 0] Bytes parsed: 14
+[22:14:37.178] [bmv2] [D] [thread 26662] [63.0] [cxt 0] Parser 'parser': end
+[22:14:37.178] [bmv2] [D] [thread 26662] [63.0] [cxt 0] Pipeline 'ingress': start
+[22:14:37.178] [bmv2] [T] [thread 26662] [63.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:14:37.178] [bmv2] [T] [thread 26662] [63.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:14:37.178] [bmv2] [T] [thread 26662] [63.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:14:37.178] [bmv2] [D] [thread 26662] [63.0] [cxt 0] Pipeline 'ingress': end
+[22:14:37.178] [bmv2] [D] [thread 26662] [63.0] [cxt 0] Egress port is 0
+[22:14:37.178] [bmv2] [D] [thread 26663] [62.0] [cxt 0] Pipeline 'egress': start
+[22:14:37.178] [bmv2] [D] [thread 26663] [62.0] [cxt 0] Pipeline 'egress': end
+[22:14:37.178] [bmv2] [D] [thread 26663] [62.0] [cxt 0] Deparser 'deparser': start
+[22:14:37.178] [bmv2] [T] [thread 26663] [62.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:14:37.178] [bmv2] [D] [thread 26663] [62.0] [cxt 0] Deparsing header 'ethernet'
+[22:14:37.178] [bmv2] [D] [thread 26663] [62.0] [cxt 0] Deparser 'deparser': end
+[22:14:37.179] [bmv2] [D] [thread 26663] [63.0] [cxt 0] Pipeline 'egress': start
+[22:14:37.179] [bmv2] [D] [thread 26663] [63.0] [cxt 0] Pipeline 'egress': end
+[22:14:37.179] [bmv2] [D] [thread 26663] [63.0] [cxt 0] Deparser 'deparser': start
+[22:14:37.179] [bmv2] [T] [thread 26663] [63.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:14:37.179] [bmv2] [D] [thread 26663] [63.0] [cxt 0] Deparsing header 'ethernet'
+[22:14:37.179] [bmv2] [D] [thread 26663] [63.0] [cxt 0] Deparser 'deparser': end
+[22:14:37.180] [bmv2] [D] [thread 26667] [62.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:14:37.180] [bmv2] [D] [thread 26667] [63.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:14:53.566] [bmv2] [D] [thread 26662] [64.0] [cxt 0] Processing packet received on port 8
+[22:14:53.566] [bmv2] [D] [thread 26662] [64.0] [cxt 0] Parser 'parser': start
+[22:14:53.566] [bmv2] [D] [thread 26662] [64.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:14:53.566] [bmv2] [D] [thread 26662] [64.0] [cxt 0] Extracting header 'ethernet'
+[22:14:53.567] [bmv2] [D] [thread 26662] [64.0] [cxt 0] Parser state 'start': key is 86dd
+[22:14:53.567] [bmv2] [T] [thread 26662] [64.0] [cxt 0] Bytes parsed: 14
+[22:14:53.567] [bmv2] [D] [thread 26662] [64.0] [cxt 0] Parser 'parser': end
+[22:14:53.567] [bmv2] [D] [thread 26662] [64.0] [cxt 0] Pipeline 'ingress': start
+[22:14:53.567] [bmv2] [T] [thread 26662] [64.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:14:53.567] [bmv2] [T] [thread 26662] [64.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:14:53.567] [bmv2] [T] [thread 26662] [64.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:14:53.567] [bmv2] [D] [thread 26662] [64.0] [cxt 0] Pipeline 'ingress': end
+[22:14:53.567] [bmv2] [D] [thread 26662] [64.0] [cxt 0] Egress port is 0
+[22:14:53.567] [bmv2] [D] [thread 26663] [64.0] [cxt 0] Pipeline 'egress': start
+[22:14:53.567] [bmv2] [D] [thread 26663] [64.0] [cxt 0] Pipeline 'egress': end
+[22:14:53.567] [bmv2] [D] [thread 26663] [64.0] [cxt 0] Deparser 'deparser': start
+[22:14:53.567] [bmv2] [T] [thread 26663] [64.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:14:53.567] [bmv2] [D] [thread 26663] [64.0] [cxt 0] Deparsing header 'ethernet'
+[22:14:53.567] [bmv2] [D] [thread 26663] [64.0] [cxt 0] Deparser 'deparser': end
+[22:14:53.567] [bmv2] [D] [thread 26667] [64.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:15:42.719] [bmv2] [D] [thread 26662] [65.0] [cxt 0] Processing packet received on port 2
+[22:15:42.719] [bmv2] [D] [thread 26662] [65.0] [cxt 0] Parser 'parser': start
+[22:15:42.719] [bmv2] [D] [thread 26662] [65.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:15:42.719] [bmv2] [D] [thread 26662] [65.0] [cxt 0] Extracting header 'ethernet'
+[22:15:42.719] [bmv2] [D] [thread 26662] [65.0] [cxt 0] Parser state 'start': key is 86dd
+[22:15:42.719] [bmv2] [T] [thread 26662] [65.0] [cxt 0] Bytes parsed: 14
+[22:15:42.719] [bmv2] [D] [thread 26662] [65.0] [cxt 0] Parser 'parser': end
+[22:15:42.719] [bmv2] [D] [thread 26662] [65.0] [cxt 0] Pipeline 'ingress': start
+[22:15:42.719] [bmv2] [T] [thread 26662] [65.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:15:42.719] [bmv2] [T] [thread 26662] [65.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:15:42.719] [bmv2] [T] [thread 26662] [65.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:15:42.719] [bmv2] [D] [thread 26662] [65.0] [cxt 0] Pipeline 'ingress': end
+[22:15:42.719] [bmv2] [D] [thread 26662] [65.0] [cxt 0] Egress port is 0
+[22:15:42.719] [bmv2] [D] [thread 26663] [65.0] [cxt 0] Pipeline 'egress': start
+[22:15:42.719] [bmv2] [D] [thread 26663] [65.0] [cxt 0] Pipeline 'egress': end
+[22:15:42.719] [bmv2] [D] [thread 26663] [65.0] [cxt 0] Deparser 'deparser': start
+[22:15:42.719] [bmv2] [T] [thread 26663] [65.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:15:42.719] [bmv2] [D] [thread 26663] [65.0] [cxt 0] Deparsing header 'ethernet'
+[22:15:42.719] [bmv2] [D] [thread 26663] [65.0] [cxt 0] Deparser 'deparser': end
+[22:15:42.720] [bmv2] [D] [thread 26667] [65.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:16:45.792] [bmv2] [D] [thread 26662] [66.0] [cxt 0] Processing packet received on port 2
+[22:16:45.792] [bmv2] [D] [thread 26662] [66.0] [cxt 0] Parser 'parser': start
+[22:16:45.792] [bmv2] [D] [thread 26662] [66.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:16:45.792] [bmv2] [D] [thread 26662] [66.0] [cxt 0] Extracting header 'ethernet'
+[22:16:45.792] [bmv2] [D] [thread 26662] [66.0] [cxt 0] Parser state 'start': key is 86dd
+[22:16:45.792] [bmv2] [T] [thread 26662] [66.0] [cxt 0] Bytes parsed: 14
+[22:16:45.792] [bmv2] [D] [thread 26662] [66.0] [cxt 0] Parser 'parser': end
+[22:16:45.792] [bmv2] [D] [thread 26662] [66.0] [cxt 0] Pipeline 'ingress': start
+[22:16:45.792] [bmv2] [T] [thread 26662] [66.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:16:45.792] [bmv2] [T] [thread 26662] [66.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:16:45.792] [bmv2] [T] [thread 26662] [66.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:16:45.792] [bmv2] [D] [thread 26662] [66.0] [cxt 0] Pipeline 'ingress': end
+[22:16:45.792] [bmv2] [D] [thread 26662] [66.0] [cxt 0] Egress port is 0
+[22:16:45.792] [bmv2] [D] [thread 26663] [66.0] [cxt 0] Pipeline 'egress': start
+[22:16:45.792] [bmv2] [D] [thread 26663] [66.0] [cxt 0] Pipeline 'egress': end
+[22:16:45.792] [bmv2] [D] [thread 26663] [66.0] [cxt 0] Deparser 'deparser': start
+[22:16:45.792] [bmv2] [T] [thread 26663] [66.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:16:45.792] [bmv2] [D] [thread 26663] [66.0] [cxt 0] Deparsing header 'ethernet'
+[22:16:45.792] [bmv2] [D] [thread 26663] [66.0] [cxt 0] Deparser 'deparser': end
+[22:16:45.792] [bmv2] [D] [thread 26667] [66.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[22:16:45.792] [bmv2] [D] [thread 26662] [67.0] [cxt 0] Processing packet received on port 2
+[22:16:45.793] [bmv2] [D] [thread 26662] [67.0] [cxt 0] Parser 'parser': start
+[22:16:45.793] [bmv2] [D] [thread 26662] [67.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:16:45.793] [bmv2] [D] [thread 26662] [67.0] [cxt 0] Extracting header 'ethernet'
+[22:16:45.793] [bmv2] [D] [thread 26662] [67.0] [cxt 0] Parser state 'start': key is 86dd
+[22:16:45.793] [bmv2] [T] [thread 26662] [67.0] [cxt 0] Bytes parsed: 14
+[22:16:45.793] [bmv2] [D] [thread 26662] [67.0] [cxt 0] Parser 'parser': end
+[22:16:45.793] [bmv2] [D] [thread 26662] [67.0] [cxt 0] Pipeline 'ingress': start
+[22:16:45.793] [bmv2] [T] [thread 26662] [67.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:16:45.793] [bmv2] [T] [thread 26662] [67.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:16:45.793] [bmv2] [T] [thread 26662] [67.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:16:45.793] [bmv2] [D] [thread 26662] [67.0] [cxt 0] Pipeline 'ingress': end
+[22:16:45.793] [bmv2] [D] [thread 26662] [67.0] [cxt 0] Egress port is 0
+[22:16:45.793] [bmv2] [D] [thread 26663] [67.0] [cxt 0] Pipeline 'egress': start
+[22:16:45.793] [bmv2] [D] [thread 26663] [67.0] [cxt 0] Pipeline 'egress': end
+[22:16:45.793] [bmv2] [D] [thread 26663] [67.0] [cxt 0] Deparser 'deparser': start
+[22:16:45.793] [bmv2] [T] [thread 26663] [67.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:16:45.793] [bmv2] [D] [thread 26663] [67.0] [cxt 0] Deparsing header 'ethernet'
+[22:16:45.793] [bmv2] [D] [thread 26663] [67.0] [cxt 0] Deparser 'deparser': end
+[22:16:45.793] [bmv2] [D] [thread 26667] [67.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[22:17:04.636] [bmv2] [D] [thread 26662] [68.0] [cxt 0] Processing packet received on port 0
+[22:17:04.636] [bmv2] [D] [thread 26662] [68.0] [cxt 0] Parser 'parser': start
+[22:17:04.636] [bmv2] [D] [thread 26662] [68.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:17:04.636] [bmv2] [D] [thread 26662] [68.0] [cxt 0] Extracting header 'ethernet'
+[22:17:04.636] [bmv2] [D] [thread 26662] [68.0] [cxt 0] Parser state 'start': key is 86dd
+[22:17:04.636] [bmv2] [T] [thread 26662] [68.0] [cxt 0] Bytes parsed: 14
+[22:17:04.636] [bmv2] [D] [thread 26662] [68.0] [cxt 0] Parser 'parser': end
+[22:17:04.636] [bmv2] [D] [thread 26662] [68.0] [cxt 0] Pipeline 'ingress': start
+[22:17:04.636] [bmv2] [T] [thread 26662] [68.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:17:04.636] [bmv2] [T] [thread 26662] [68.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:17:04.636] [bmv2] [T] [thread 26662] [68.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:17:04.636] [bmv2] [D] [thread 26662] [68.0] [cxt 0] Pipeline 'ingress': end
+[22:17:04.636] [bmv2] [D] [thread 26662] [68.0] [cxt 0] Egress port is 0
+[22:17:04.637] [bmv2] [D] [thread 26663] [68.0] [cxt 0] Pipeline 'egress': start
+[22:17:04.637] [bmv2] [D] [thread 26663] [68.0] [cxt 0] Pipeline 'egress': end
+[22:17:04.637] [bmv2] [D] [thread 26663] [68.0] [cxt 0] Deparser 'deparser': start
+[22:17:04.637] [bmv2] [T] [thread 26663] [68.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:17:04.637] [bmv2] [D] [thread 26663] [68.0] [cxt 0] Deparsing header 'ethernet'
+[22:17:04.637] [bmv2] [D] [thread 26663] [68.0] [cxt 0] Deparser 'deparser': end
+[22:17:04.637] [bmv2] [D] [thread 26667] [68.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:17:45.036] [bmv2] [D] [thread 26662] [69.0] [cxt 0] Processing packet received on port 3
+[22:17:45.036] [bmv2] [D] [thread 26662] [69.0] [cxt 0] Parser 'parser': start
+[22:17:45.036] [bmv2] [D] [thread 26662] [69.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:17:45.036] [bmv2] [D] [thread 26662] [69.0] [cxt 0] Extracting header 'ethernet'
+[22:17:45.036] [bmv2] [D] [thread 26662] [69.0] [cxt 0] Parser state 'start': key is 86dd
+[22:17:45.036] [bmv2] [T] [thread 26662] [69.0] [cxt 0] Bytes parsed: 14
+[22:17:45.036] [bmv2] [D] [thread 26662] [69.0] [cxt 0] Parser 'parser': end
+[22:17:45.036] [bmv2] [D] [thread 26662] [69.0] [cxt 0] Pipeline 'ingress': start
+[22:17:45.036] [bmv2] [T] [thread 26662] [69.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:17:45.036] [bmv2] [T] [thread 26662] [69.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:17:45.036] [bmv2] [T] [thread 26662] [69.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:17:45.036] [bmv2] [D] [thread 26662] [69.0] [cxt 0] Pipeline 'ingress': end
+[22:17:45.036] [bmv2] [D] [thread 26662] [69.0] [cxt 0] Egress port is 0
+[22:17:45.036] [bmv2] [D] [thread 26662] [70.0] [cxt 0] Processing packet received on port 3
+[22:17:45.036] [bmv2] [D] [thread 26662] [70.0] [cxt 0] Parser 'parser': start
+[22:17:45.036] [bmv2] [D] [thread 26662] [70.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:17:45.036] [bmv2] [D] [thread 26662] [70.0] [cxt 0] Extracting header 'ethernet'
+[22:17:45.036] [bmv2] [D] [thread 26662] [70.0] [cxt 0] Parser state 'start': key is 86dd
+[22:17:45.036] [bmv2] [T] [thread 26662] [70.0] [cxt 0] Bytes parsed: 14
+[22:17:45.036] [bmv2] [D] [thread 26662] [70.0] [cxt 0] Parser 'parser': end
+[22:17:45.036] [bmv2] [D] [thread 26662] [70.0] [cxt 0] Pipeline 'ingress': start
+[22:17:45.036] [bmv2] [T] [thread 26662] [70.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:17:45.036] [bmv2] [T] [thread 26662] [70.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:17:45.036] [bmv2] [T] [thread 26662] [70.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:17:45.036] [bmv2] [D] [thread 26662] [70.0] [cxt 0] Pipeline 'ingress': end
+[22:17:45.036] [bmv2] [D] [thread 26662] [70.0] [cxt 0] Egress port is 0
+[22:17:45.036] [bmv2] [D] [thread 26663] [69.0] [cxt 0] Pipeline 'egress': start
+[22:17:45.036] [bmv2] [D] [thread 26663] [69.0] [cxt 0] Pipeline 'egress': end
+[22:17:45.036] [bmv2] [D] [thread 26663] [69.0] [cxt 0] Deparser 'deparser': start
+[22:17:45.036] [bmv2] [T] [thread 26663] [69.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:17:45.036] [bmv2] [D] [thread 26663] [69.0] [cxt 0] Deparsing header 'ethernet'
+[22:17:45.036] [bmv2] [D] [thread 26663] [69.0] [cxt 0] Deparser 'deparser': end
+[22:17:45.036] [bmv2] [D] [thread 26663] [70.0] [cxt 0] Pipeline 'egress': start
+[22:17:45.036] [bmv2] [D] [thread 26663] [70.0] [cxt 0] Pipeline 'egress': end
+[22:17:45.036] [bmv2] [D] [thread 26663] [70.0] [cxt 0] Deparser 'deparser': start
+[22:17:45.036] [bmv2] [T] [thread 26663] [70.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:17:45.036] [bmv2] [D] [thread 26663] [70.0] [cxt 0] Deparsing header 'ethernet'
+[22:17:45.036] [bmv2] [D] [thread 26663] [70.0] [cxt 0] Deparser 'deparser': end
+[22:17:45.037] [bmv2] [D] [thread 26667] [69.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[22:17:45.037] [bmv2] [D] [thread 26667] [70.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[22:18:26.555] [bmv2] [D] [thread 26662] [71.0] [cxt 0] Processing packet received on port 3
+[22:18:26.555] [bmv2] [D] [thread 26662] [71.0] [cxt 0] Parser 'parser': start
+[22:18:26.555] [bmv2] [D] [thread 26662] [71.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:18:26.555] [bmv2] [D] [thread 26662] [71.0] [cxt 0] Extracting header 'ethernet'
+[22:18:26.555] [bmv2] [D] [thread 26662] [71.0] [cxt 0] Parser state 'start': key is 86dd
+[22:18:26.555] [bmv2] [T] [thread 26662] [71.0] [cxt 0] Bytes parsed: 14
+[22:18:26.555] [bmv2] [D] [thread 26662] [71.0] [cxt 0] Parser 'parser': end
+[22:18:26.555] [bmv2] [D] [thread 26662] [71.0] [cxt 0] Pipeline 'ingress': start
+[22:18:26.555] [bmv2] [T] [thread 26662] [71.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:18:26.555] [bmv2] [T] [thread 26662] [71.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:18:26.555] [bmv2] [T] [thread 26662] [71.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:18:26.555] [bmv2] [D] [thread 26662] [71.0] [cxt 0] Pipeline 'ingress': end
+[22:18:26.555] [bmv2] [D] [thread 26662] [71.0] [cxt 0] Egress port is 0
+[22:18:26.555] [bmv2] [D] [thread 26663] [71.0] [cxt 0] Pipeline 'egress': start
+[22:18:26.555] [bmv2] [D] [thread 26663] [71.0] [cxt 0] Pipeline 'egress': end
+[22:18:26.555] [bmv2] [D] [thread 26663] [71.0] [cxt 0] Deparser 'deparser': start
+[22:18:26.555] [bmv2] [T] [thread 26663] [71.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:18:26.555] [bmv2] [D] [thread 26663] [71.0] [cxt 0] Deparsing header 'ethernet'
+[22:18:26.555] [bmv2] [D] [thread 26663] [71.0] [cxt 0] Deparser 'deparser': end
+[22:18:26.555] [bmv2] [D] [thread 26667] [71.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:20:37.625] [bmv2] [D] [thread 26662] [72.0] [cxt 0] Processing packet received on port 5
+[22:20:37.625] [bmv2] [D] [thread 26662] [72.0] [cxt 0] Parser 'parser': start
+[22:20:37.625] [bmv2] [D] [thread 26662] [72.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:20:37.625] [bmv2] [D] [thread 26662] [72.0] [cxt 0] Extracting header 'ethernet'
+[22:20:37.625] [bmv2] [D] [thread 26662] [72.0] [cxt 0] Parser state 'start': key is 86dd
+[22:20:37.625] [bmv2] [T] [thread 26662] [72.0] [cxt 0] Bytes parsed: 14
+[22:20:37.625] [bmv2] [D] [thread 26662] [72.0] [cxt 0] Parser 'parser': end
+[22:20:37.626] [bmv2] [D] [thread 26662] [72.0] [cxt 0] Pipeline 'ingress': start
+[22:20:37.626] [bmv2] [T] [thread 26662] [72.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:20:37.626] [bmv2] [T] [thread 26662] [72.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:20:37.626] [bmv2] [T] [thread 26662] [72.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:20:37.626] [bmv2] [D] [thread 26662] [72.0] [cxt 0] Pipeline 'ingress': end
+[22:20:37.626] [bmv2] [D] [thread 26662] [72.0] [cxt 0] Egress port is 0
+[22:20:37.626] [bmv2] [D] [thread 26663] [72.0] [cxt 0] Pipeline 'egress': start
+[22:20:37.626] [bmv2] [D] [thread 26663] [72.0] [cxt 0] Pipeline 'egress': end
+[22:20:37.626] [bmv2] [D] [thread 26663] [72.0] [cxt 0] Deparser 'deparser': start
+[22:20:37.626] [bmv2] [T] [thread 26663] [72.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:20:37.626] [bmv2] [D] [thread 26663] [72.0] [cxt 0] Deparsing header 'ethernet'
+[22:20:37.626] [bmv2] [D] [thread 26663] [72.0] [cxt 0] Deparser 'deparser': end
+[22:20:37.626] [bmv2] [D] [thread 26667] [72.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:21:59.563] [bmv2] [D] [thread 26662] [73.0] [cxt 0] Processing packet received on port 3
+[22:21:59.563] [bmv2] [D] [thread 26662] [73.0] [cxt 0] Parser 'parser': start
+[22:21:59.563] [bmv2] [D] [thread 26662] [73.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:21:59.563] [bmv2] [D] [thread 26662] [73.0] [cxt 0] Extracting header 'ethernet'
+[22:21:59.563] [bmv2] [D] [thread 26662] [73.0] [cxt 0] Parser state 'start': key is 86dd
+[22:21:59.563] [bmv2] [T] [thread 26662] [73.0] [cxt 0] Bytes parsed: 14
+[22:21:59.563] [bmv2] [D] [thread 26662] [73.0] [cxt 0] Parser 'parser': end
+[22:21:59.563] [bmv2] [D] [thread 26662] [73.0] [cxt 0] Pipeline 'ingress': start
+[22:21:59.563] [bmv2] [T] [thread 26662] [73.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:21:59.563] [bmv2] [T] [thread 26662] [73.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:21:59.563] [bmv2] [T] [thread 26662] [73.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:21:59.563] [bmv2] [D] [thread 26662] [73.0] [cxt 0] Pipeline 'ingress': end
+[22:21:59.563] [bmv2] [D] [thread 26662] [73.0] [cxt 0] Egress port is 0
+[22:21:59.563] [bmv2] [D] [thread 26663] [73.0] [cxt 0] Pipeline 'egress': start
+[22:21:59.563] [bmv2] [D] [thread 26663] [73.0] [cxt 0] Pipeline 'egress': end
+[22:21:59.563] [bmv2] [D] [thread 26663] [73.0] [cxt 0] Deparser 'deparser': start
+[22:21:59.564] [bmv2] [T] [thread 26663] [73.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:21:59.564] [bmv2] [D] [thread 26663] [73.0] [cxt 0] Deparsing header 'ethernet'
+[22:21:59.564] [bmv2] [D] [thread 26663] [73.0] [cxt 0] Deparser 'deparser': end
+[22:21:59.564] [bmv2] [D] [thread 26667] [73.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[22:21:59.564] [bmv2] [D] [thread 26662] [74.0] [cxt 0] Processing packet received on port 9
+[22:21:59.564] [bmv2] [D] [thread 26662] [74.0] [cxt 0] Parser 'parser': start
+[22:21:59.564] [bmv2] [D] [thread 26662] [74.0] [cxt 0] Parser 'parser' entering state 'start'
+[22:21:59.564] [bmv2] [D] [thread 26662] [74.0] [cxt 0] Extracting header 'ethernet'
+[22:21:59.564] [bmv2] [D] [thread 26662] [74.0] [cxt 0] Parser state 'start': key is 86dd
+[22:21:59.564] [bmv2] [T] [thread 26662] [74.0] [cxt 0] Bytes parsed: 14
+[22:21:59.564] [bmv2] [D] [thread 26662] [74.0] [cxt 0] Parser 'parser': end
+[22:21:59.564] [bmv2] [D] [thread 26662] [74.0] [cxt 0] Pipeline 'ingress': start
+[22:21:59.564] [bmv2] [T] [thread 26662] [74.0] [cxt 0] GAIA1107.p4(279) Condition "hdr.srcRoutes[0].isValid()" (node_2) is false
+[22:21:59.564] [bmv2] [T] [thread 26662] [74.0] [cxt 0] GAIA1107.p4(286) Condition "hdr.myTunnel.isValid()" (node_6) is false
+[22:21:59.564] [bmv2] [T] [thread 26662] [74.0] [cxt 0] GAIA1107.p4(290) Condition "hdr.ipv4.isValid()" (node_8) is false
+[22:21:59.564] [bmv2] [D] [thread 26662] [74.0] [cxt 0] Pipeline 'ingress': end
+[22:21:59.564] [bmv2] [D] [thread 26662] [74.0] [cxt 0] Egress port is 0
+[22:21:59.564] [bmv2] [D] [thread 26663] [74.0] [cxt 0] Pipeline 'egress': start
+[22:21:59.564] [bmv2] [D] [thread 26663] [74.0] [cxt 0] Pipeline 'egress': end
+[22:21:59.564] [bmv2] [D] [thread 26663] [74.0] [cxt 0] Deparser 'deparser': start
+[22:21:59.564] [bmv2] [T] [thread 26663] [74.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[22:21:59.564] [bmv2] [D] [thread 26663] [74.0] [cxt 0] Deparsing header 'ethernet'
+[22:21:59.564] [bmv2] [D] [thread 26663] [74.0] [cxt 0] Deparser 'deparser': end
+[22:21:59.564] [bmv2] [D] [thread 26667] [74.0] [cxt 0] Transmitting packet of size 70 out of port 0
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory

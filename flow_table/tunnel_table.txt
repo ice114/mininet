@@ -1,0 +1,3 @@
+table_add tunnel_exact tunnel_to_sat 4626 =>
+table_add tunnel_exact tunnel_to_sat_host 4628 =>
+table_add tunnel_exact tunnel_to_gw_host 4627 =>

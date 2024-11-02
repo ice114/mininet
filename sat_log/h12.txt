@@ -1,0 +1,353 @@
+sniffing
+get a pkt
+get a pkt
+get a pkt
+get a tunnel packet
+pkt needs to trans to sat gw
+the d_accept sat is s33
+[1, 18]
+[u'8', u'8', u'6', u'4']
+###[ Ethernet ]### 
+  dst       = ff:ff:ff:ff:ff:ff
+  src       = 08:00:00:00:01:02
+  type      = 0x1111
+###[ SourceRoute ]### 
+     bos       = 0L
+     port      = 8L
+###[ SourceRoute ]### 
+        bos       = 0L
+        port      = 8L
+###[ SourceRoute ]### 
+           bos       = 0L
+           port      = 6L
+###[ SourceRoute ]### 
+              bos       = 0L
+              port      = 4L
+###[ SourceRoute ]### 
+                 bos       = 4627L
+                 port      = 1L
+###[ myTunnel ]### 
+                    t_src     = 10.0.9.9
+                    t_dst     = 192.168.3.3
+                    VNI       = 2L
+                    s_long    = 116L
+                    s_lati    = 40L
+                    d_long    = 75L
+                    d_lati    = 39L
+                    sat       = 3L
+###[ IP ]### 
+                       version   = 4L
+                       ihl       = 5L
+                       tos       = 0x0
+                       len       = 29
+                       id        = 1
+                       flags     = 
+                       frag      = 0L
+                       ttl       = 64
+                       proto     = udp
+                       chksum    = 0x57c1
+                       src       = 10.0.7.7
+                       dst       = 10.0.8.8
+                       \options   \
+###[ UDP ]### 
+                          sport     = 1234
+                          dport     = 4321
+                          len       = 9
+                          chksum    = 0x961a
+###[ Raw ]### 
+                             load      = '1'
+
+send pkt with SR
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a tunnel packet
+pkt needs to trans to sat gw
+the d_accept sat is s33
+[1, 18]
+[u'8', u'8', u'6', u'4']
+###[ Ethernet ]### 
+  dst       = ff:ff:ff:ff:ff:ff
+  src       = 08:00:00:00:01:02
+  type      = 0x1111
+###[ SourceRoute ]### 
+     bos       = 0L
+     port      = 8L
+###[ SourceRoute ]### 
+        bos       = 0L
+        port      = 8L
+###[ SourceRoute ]### 
+           bos       = 0L
+           port      = 6L
+###[ SourceRoute ]### 
+              bos       = 0L
+              port      = 4L
+###[ SourceRoute ]### 
+                 bos       = 4627L
+                 port      = 1L
+###[ myTunnel ]### 
+                    t_src     = 10.0.9.9
+                    t_dst     = 192.168.3.3
+                    VNI       = 2L
+                    s_long    = 116L
+                    s_lati    = 40L
+                    d_long    = 75L
+                    d_lati    = 39L
+                    sat       = 3L
+###[ IP ]### 
+                       version   = 4L
+                       ihl       = 5L
+                       tos       = 0x0
+                       len       = 29
+                       id        = 1
+                       flags     = 
+                       frag      = 0L
+                       ttl       = 64
+                       proto     = udp
+                       chksum    = 0x57c1
+                       src       = 10.0.7.7
+                       dst       = 10.0.8.8
+                       \options   \
+###[ UDP ]### 
+                          sport     = 1234
+                          dport     = 4321
+                          len       = 9
+                          chksum    = 0x961a
+###[ Raw ]### 
+                             load      = '1'
+
+send pkt with SR
+get a pkt
+get a pkt
+get a pkt
+sniffing
+get a pkt
+get a tunnel packet
+pkt needs to trans to sat gw
+the d_accept sat is s33
+[1, 18]
+[u'8', u'8', u'6', u'4']
+###[ Ethernet ]### 
+  dst       = ff:ff:ff:ff:ff:ff
+  src       = 08:00:00:00:01:02
+  type      = 0x1111
+###[ SourceRoute ]### 
+     bos       = 0L
+     port      = 8L
+###[ SourceRoute ]### 
+        bos       = 0L
+        port      = 8L
+###[ SourceRoute ]### 
+           bos       = 0L
+           port      = 6L
+###[ SourceRoute ]### 
+              bos       = 0L
+              port      = 4L
+###[ SourceRoute ]### 
+                 bos       = 4627L
+                 port      = 1L
+###[ myTunnel ]### 
+                    t_src     = 10.0.9.9
+                    t_dst     = 192.168.3.3
+                    VNI       = 2L
+                    s_long    = 116L
+                    s_lati    = 40L
+                    d_long    = 75L
+                    d_lati    = 39L
+                    sat       = 3L
+###[ IP ]### 
+                       version   = 4L
+                       ihl       = 5L
+                       tos       = 0x0
+                       len       = 29
+                       id        = 1
+                       flags     = 
+                       frag      = 0L
+                       ttl       = 64
+                       proto     = udp
+                       chksum    = 0x57c1
+                       src       = 10.0.7.7
+                       dst       = 10.0.8.8
+                       \options   \
+###[ UDP ]### 
+                          sport     = 1234
+                          dport     = 4321
+                          len       = 9
+                          chksum    = 0x961a
+###[ Raw ]### 
+                             load      = '1'
+
+send pkt with SR
+get a pkt
+get a pkt
+get a pkt
+get a tunnel packet
+pkt needs to trans to sat gw
+the d_accept sat is s33
+[1, 18]
+[u'8', u'8', u'6', u'4']
+###[ Ethernet ]### 
+  dst       = ff:ff:ff:ff:ff:ff
+  src       = 08:00:00:00:01:02
+  type      = 0x1111
+###[ SourceRoute ]### 
+     bos       = 0L
+     port      = 8L
+###[ SourceRoute ]### 
+        bos       = 0L
+        port      = 8L
+###[ SourceRoute ]### 
+           bos       = 0L
+           port      = 6L
+###[ SourceRoute ]### 
+              bos       = 0L
+              port      = 4L
+###[ SourceRoute ]### 
+                 bos       = 4627L
+                 port      = 1L
+###[ myTunnel ]### 
+                    t_src     = 10.0.9.9
+                    t_dst     = 192.168.3.3
+                    VNI       = 2L
+                    s_long    = 116L
+                    s_lati    = 40L
+                    d_long    = 75L
+                    d_lati    = 39L
+                    sat       = 3L
+###[ IP ]### 
+                       version   = 4L
+                       ihl       = 5L
+                       tos       = 0x0
+                       len       = 29
+                       id        = 1
+                       flags     = 
+                       frag      = 0L
+                       ttl       = 64
+                       proto     = udp
+                       chksum    = 0x57c1
+                       src       = 10.0.7.7
+                       dst       = 10.0.8.8
+                       \options   \
+###[ UDP ]### 
+                          sport     = 1234
+                          dport     = 4321
+                          len       = 9
+                          chksum    = 0x961a
+###[ Raw ]### 
+                             load      = '1'
+
+send pkt with SR
+get a pkt
+get a pkt
+sniffing
+get a pkt
+get a tunnel packet
+pkt needs to trans to sat gw
+the d_accept sat is s33
+[1, 18]
+[u'8', u'8', u'6', u'4']
+###[ Ethernet ]### 
+  dst       = ff:ff:ff:ff:ff:ff
+  src       = 08:00:00:00:01:02
+  type      = 0x1111
+###[ SourceRoute ]### 
+     bos       = 0L
+     port      = 8L
+###[ SourceRoute ]### 
+        bos       = 0L
+        port      = 8L
+###[ SourceRoute ]### 
+           bos       = 0L
+           port      = 6L
+###[ SourceRoute ]### 
+              bos       = 0L
+              port      = 4L
+###[ SourceRoute ]### 
+                 bos       = 4627L
+                 port      = 1L
+###[ myTunnel ]### 
+                    t_src     = 10.0.9.9
+                    t_dst     = 192.168.3.3
+                    VNI       = 2L
+                    s_long    = 116L
+                    s_lati    = 40L
+                    d_long    = 75L
+                    d_lati    = 39L
+                    sat       = 3L
+###[ IP ]### 
+                       version   = 4L
+                       ihl       = 5L
+                       tos       = 0x0
+                       len       = 29
+                       id        = 1
+                       flags     = 
+                       frag      = 0L
+                       ttl       = 64
+                       proto     = udp
+                       chksum    = 0x57c1
+                       src       = 10.0.7.7
+                       dst       = 10.0.8.8
+                       \options   \
+###[ UDP ]### 
+                          sport     = 1234
+                          dport     = 4321
+                          len       = 9
+                          chksum    = 0x961a
+###[ Raw ]### 
+                             load      = '1'
+
+send pkt with SR
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python: command not found
+bash: python: command not found
+bash: python: command not found
+bash: python: command not found

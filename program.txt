@@ -1,0 +1,58 @@
+h11 python sw_recieve_regi0324.py >>./sat_log/h11.txt 2>&1 &
+h12 python sw_recieve_regi0324.py >>./sat_log/h12.txt 2>&1 &
+h13 python sw_recieve_regi0324.py >>./sat_log/h13.txt 2>&1 &
+h14 python sw_recieve_regi0324.py >>./sat_log/h14.txt 2>&1 &
+h15 python sw_recieve_regi0324.py >>./sat_log/h15.txt 2>&1 &
+h16 python sw_recieve_regi0324.py >>./sat_log/h16.txt 2>&1 &
+h17 python sw_recieve_regi0324.py >>./sat_log/h17.txt 2>&1 &
+h18 python sw_recieve_regi0324.py >>./sat_log/h18.txt 2>&1 &
+h21 python sw_recieve_regi0324.py >>./sat_log/h21.txt 2>&1 &
+h22 python sw_recieve_regi0324.py >>./sat_log/h22.txt 2>&1 &
+h23 python sw_recieve_regi0324.py >>./sat_log/h23.txt 2>&1 &
+h24 python sw_recieve_regi0324.py >>./sat_log/h24.txt 2>&1 &
+h25 python sw_recieve_regi0324.py >>./sat_log/h25.txt 2>&1 &
+h26 python sw_recieve_regi0324.py >>./sat_log/h26.txt 2>&1 &
+h27 python sw_recieve_regi0324.py >>./sat_log/h27.txt 2>&1 &
+h28 python sw_recieve_regi0324.py >>./sat_log/h28.txt 2>&1 &
+h31 python sw_recieve_regi0324.py >>./sat_log/h31.txt 2>&1 &
+h32 python sw_recieve_regi0324.py >>./sat_log/h32.txt 2>&1 &
+h33 python sw_recieve_regi0324.py >>./sat_log/h33.txt 2>&1 &
+h34 python sw_recieve_regi0324.py >>./sat_log/h34.txt 2>&1 &
+h35 python sw_recieve_regi0324.py >>./sat_log/h35.txt 2>&1 &
+h36 python sw_recieve_regi0324.py >>./sat_log/h36.txt 2>&1 &
+h37 python sw_recieve_regi0324.py >>./sat_log/h37.txt 2>&1 &
+h38 python sw_recieve_regi0324.py >>./sat_log/h38.txt 2>&1 &
+h41 python sw_recieve_regi0324.py >>./sat_log/h41.txt 2>&1 &
+h42 python sw_recieve_regi0324.py >>./sat_log/h42.txt 2>&1 &
+h43 python sw_recieve_regi0324.py >>./sat_log/h43.txt 2>&1 &
+h44 python sw_recieve_regi0324.py >>./sat_log/h44.txt 2>&1 &
+h45 python sw_recieve_regi0324.py >>./sat_log/h45.txt 2>&1 &
+h46 python sw_recieve_regi0324.py >>./sat_log/h46.txt 2>&1 &
+h47 python sw_recieve_regi0324.py >>./sat_log/h47.txt 2>&1 &
+h48 python sw_recieve_regi0324.py >>./sat_log/h48.txt 2>&1 &
+h51 python sw_recieve_regi0324.py >>./sat_log/h51.txt 2>&1 &
+h52 python sw_recieve_regi0324.py >>./sat_log/h52.txt 2>&1 &
+h53 python sw_recieve_regi0324.py >>./sat_log/h53.txt 2>&1 &
+h54 python sw_recieve_regi0324.py >>./sat_log/h54.txt 2>&1 &
+h55 python sw_recieve_regi0324.py >>./sat_log/h55.txt 2>&1 &
+h56 python sw_recieve_regi0324.py >>./sat_log/h56.txt 2>&1 &
+h57 python sw_recieve_regi0324.py >>./sat_log/h57.txt 2>&1 &
+h58 python sw_recieve_regi0324.py >>./sat_log/h58.txt 2>&1 &
+h61 python sw_recieve_regi0324.py >>./sat_log/h61.txt 2>&1 &
+h62 python sw_recieve_regi0324.py >>./sat_log/h62.txt 2>&1 &
+h63 python sw_recieve_regi0324.py >>./sat_log/h63.txt 2>&1 &
+h64 python sw_recieve_regi0324.py >>./sat_log/h64.txt 2>&1 &
+h65 python sw_recieve_regi0324.py >>./sat_log/h65.txt 2>&1 &
+h66 python sw_recieve_regi0324.py >>./sat_log/h66.txt 2>&1 &
+h67 python sw_recieve_regi0324.py >>./sat_log/h67.txt 2>&1 &
+h68 python sw_recieve_regi0324.py >>./sat_log/h68.txt 2>&1 &
+u1 python ground.py >>./sat_log/u1.txt 2>&1 &
+u2 python user_send.py >>./sat_log/u2.txt 2>&1 &
+u3 python user_recieve.py >>./sat_log/u3.txt 2>&1 &
+gw1 python gateway.py >>./sat_log/gw1.txt 2>&1 &
+gw2 python gateway.py >>./sat_log/gw2.txt 2>&1 &
+
+
+
+
+

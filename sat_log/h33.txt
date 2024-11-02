@@ -1,0 +1,87 @@
+sniffing
+get a pkt
+get a pkt
+iface = eth0
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+iface = eth0
+get a pkt
+get a pkt
+get a pkt
+sniffing
+get a pkt
+iface = eth0
+get a pkt
+get a pkt
+get a pkt
+iface = eth0
+get a pkt
+get a pkt
+sniffing
+get a pkt
+iface = eth0
+###[ Ethernet ]### 
+  dst       = ff:ff:ff:ff:ff:ff
+  src       = 08:00:00:00:03:03
+  type      = 0x1111
+###[ SourceRoute ]### 
+     bos       = 2048L
+     port      = 3L
+###[ Raw ]### 
+        load      = 'E\x00\x00\x1d\x00\x01\x00\x00@\x11W\xc1\n\x00\x07\x07\n\x00\x08\x08\x04\xd2\x10\xe1\x00\t\x96\x1a1'
+
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+get a pkt
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python：未找到命令
+bash: python: command not found
+bash: python: command not found
+bash: python: command not found
+bash: python: command not found
